@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="338px" preserveAspectRatio="none" style="width:444px;height:338px;" version="1.1" viewBox="0 0 444 338" width="444px" zoomAndPan="magnify"><defs><filter height="300%" id="f146pos3zu6qgr" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[9b8c6be1df146e5abec69b6abdd3d272]
+cluster Windows--><polygon fill="#FFFFFF" filter="url(#f146pos3zu6qgr)" points="22,24,91,24,98,47.6094,210,47.6094,210,326,22,326,22,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="98" y1="47.6094" y2="47.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="63" x="26" y="40.5332">Windows</text><!--MD5=[82cac598741a9e867291781c7b868787]
+cluster mom1--><rect fill="#FFF8DC" filter="url(#f146pos3zu6qgr)" height="124" style="stroke: #000000; stroke-width: 1.5;" width="115" x="63" y="170"/><rect fill="#FFF8DC" height="10" style="stroke: #000000; stroke-width: 1.5;" width="15" x="158" y="175"/><rect fill="#FFF8DC" height="2" style="stroke: #000000; stroke-width: 1.5;" width="4" x="156" y="177"/><rect fill="#FFF8DC" height="2" style="stroke: #000000; stroke-width: 1.5;" width="4" x="156" y="181"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="37" x="102" y="197.5332">MOM</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="29" x="106" y="215.1426">P&amp;C</text><!--MD5=[878f2a59723f6dd24b07858462e6da2d]
+cluster zOS--><polygon fill="#FFFFFF" filter="url(#f146pos3zu6qgr)" points="234,24,267,24,274,47.6094,422,47.6094,422,326,234,326,234,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="234" x2="274" y1="47.6094" y2="47.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="27" x="238" y="40.5332">zOS</text><!--MD5=[d844553193a6b772924039f8fc44e645]
+cluster mom2--><rect fill="#FFF8DC" filter="url(#f146pos3zu6qgr)" height="124" style="stroke: #000000; stroke-width: 1.5;" width="115" x="275" y="170"/><rect fill="#FFF8DC" height="10" style="stroke: #000000; stroke-width: 1.5;" width="15" x="370" y="175"/><rect fill="#FFF8DC" height="2" style="stroke: #000000; stroke-width: 1.5;" width="4" x="368" y="177"/><rect fill="#FFF8DC" height="2" style="stroke: #000000; stroke-width: 1.5;" width="4" x="368" y="181"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="37" x="314" y="197.5332">MOM</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="29" x="318" y="215.1426">P&amp;C</text><!--MD5=[50f6993033c4e5f48666d755015d13f7]
+entity blc--><rect fill="#FEFECE" filter="url(#f146pos3zu6qgr)" height="37.6094" style="stroke: #A80036; stroke-width: 1.5;" width="155" x="38.5" y="60"/><rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="33.5" y="65"/><rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="33.5" y="87.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="135" x="48.5" y="84.5332">Business Logic Client</text><!--MD5=[6e1b9632d1c9d3cb391ae0f740befe45]
+entity pc1--><rect fill="#FEFECE" filter="url(#f146pos3zu6qgr)" height="37.6094" style="stroke: #A80036; stroke-width: 1.5;" width="48" x="106" y="232"/><rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="101" y="237"/><rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="101" y="259.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="28" x="116" y="256.5332">P&amp;C</text><!--MD5=[cb65735b1890dabcafed4bb5e661634d]
+entity blb--><rect fill="#FEFECE" filter="url(#f146pos3zu6qgr)" height="37.6094" style="stroke: #A80036; stroke-width: 1.5;" width="155" x="250.5" y="60"/><rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="245.5" y="65"/><rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="245.5" y="87.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="135" x="260.5" y="84.5332">Business Logic Batch</text><!--MD5=[d4dba79148016886cd136b2e6afd8a69]
+entity pc2--><rect fill="#FEFECE" filter="url(#f146pos3zu6qgr)" height="37.6094" style="stroke: #A80036; stroke-width: 1.5;" width="48" x="318" y="232"/><rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="313" y="237"/><rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="313" y="259.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="28" x="328" y="256.5332">P&amp;C</text><!--MD5=[a245d657d6a21bbd10a3092fcec8f53a]
+link blc to mom1--><path d="M108.857,98.018 C103.1704,112.864 95.3101,134.559 90,154 C88.6123,159.0808 87.282,164.3387 86.0156,169.6565 " fill="none" id="blc-&gt;mom1" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="86.0156,169.6565,91.9917,161.8279,87.1739,164.7925,84.2094,159.9747,86.0156,169.6565" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="84" x="99" y="142.4951">in process call</text><!--MD5=[e8890c3f3210dcc1601bf25335c58f18]
+link blb to mom2--><path d="M320.857,98.018 C315.17,112.864 307.31,134.559 302,154 C300.6123,159.0808 299.282,164.3387 298.0156,169.6565 " fill="none" id="blb-&gt;mom2" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="298.0156,169.6565,303.9917,161.8279,299.1739,164.7925,296.2094,159.9747,298.0156,169.6565" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="84" x="310" y="142.4951">in process call</text><!--MD5=[37a0ff7862f0558129be9a6aad9c7c5e]
+@startuml
+
+package "Windows" {
+  [Business Logic Client] as blc
+  component [MOM\nP&C] as mom1 #Cornsilk {
+		[P&C] as pc1
+  }
+  blc - -> mom1 : in process call
+}
+package "zOS" {
+  [Business Logic Batch] as blb
+  component [MOM\nP&C] as mom2 #Cornsilk {
+    [P&C] as pc2
+  }
+  blb - -> mom2 : in process call
+}
+
+@enduml
+
+PlantUML version 1.2020.06(Sun Apr 05 14:38:32 CEST 2020)
+(APACHE source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.3+7
+Operating System: Windows 10
+Default Encoding: Cp1252
+Language: de
+Country: DE
+--></g></svg>

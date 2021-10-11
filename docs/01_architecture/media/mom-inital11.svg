@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="143px" preserveAspectRatio="none" style="width:173px;height:143px;" version="1.1" viewBox="0 0 173 143" width="173px" zoomAndPan="magnify"><defs><filter height="300%" id="f1ss6zbp2ckql1" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[4773675b61bca3e9993533c94b0d3c55]
+cluster MOM\nLife--><rect fill="#FFF8DC" filter="url(#f1ss6zbp2ckql1)" height="108" style="stroke: #000000; stroke-width: 1.5;" width="140" x="22" y="24"/><rect fill="#FFF8DC" height="10" style="stroke: #000000; stroke-width: 1.5;" width="15" x="142" y="29"/><rect fill="#FFF8DC" height="2" style="stroke: #000000; stroke-width: 1.5;" width="4" x="140" y="31"/><rect fill="#FFF8DC" height="2" style="stroke: #000000; stroke-width: 1.5;" width="4" x="140" y="35"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="37" x="73.5" y="51.5332">MOM</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="26" x="79" y="69.1426">Life</text><!--MD5=[3a60caee5e8953da979fdbc40bd57909]
+entity CPL generate--><rect fill="#FEFECE" filter="url(#f1ss6zbp2ckql1)" height="37.6094" style="stroke: #A80036; stroke-width: 1.5;" width="108" x="38" y="78"/><rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="33" y="83"/><rect fill="#FEFECE" height="5" style="stroke: #A80036; stroke-width: 1.5;" width="10" x="33" y="105.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="88" x="48" y="102.5332">CPL generate</text><!--MD5=[2d9c94e964435240304600d50b5eb2d6]
+@startuml
+
+  component [MOM\nLife] #Cornsilk {
+    [CPL generate]
+  }
+
+@enduml
+
+PlantUML version 1.2020.06(Sun Apr 05 14:38:32 CEST 2020)
+(APACHE source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.3+7
+Operating System: Windows 10
+Default Encoding: Cp1252
+Language: de
+Country: DE
+--></g></svg>
