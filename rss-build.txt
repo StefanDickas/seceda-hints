@@ -1,0 +1,140 @@
+von Filip Jeremic an alle:    11:12 AM
+https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html
+von Filip Jeremic an alle:    11:28 AM
+-G "generator name"
+von Filip Jeremic an alle:    11:29 AM
+cmake -G "Visual Studio 16 2019" -A x64
+von Filip Jeremic an alle:    11:29 AM
+
+or
+
+Wolfgang Fertsak
+
+
+-DCPP_DEVKIT=...
+von Filip Jeremic an alle:    11:31 AM
+cmake .. -A x64 -G "Visual Studio 15 2017" -DCMAKE_BUILD_TYPE=Debug -DLOCAL_CPP_DEVKIT=C:/dev/allianz/cpp_devkit_debug/ -DCMAKE_INSTALL_PREFIX=C:/dev/allianz/abs-sdk-debug
+cmake .. -A x64 -G "Visual Studio 15 2017" -DCMAKE_BUILD_TYPE=Debug -DLOCAL_CPP_DEVKIT=C:/dev3/allianz/cpp_devkit_debug/ -DCMAKE_INSTALL_PREFIX=C:/dev3/allianz/abs-sdk-debug
+
+
+=================
+CPP_DEVKIT_BUILD:
+
+cd CPP_DEVKIT_BUILD
+mkdir build_debug
+cd build_debug
+cmake -DCMAKE_BUILD_TYPE=Debug -DLOCAL_OUT_FOLDER=C:/dev3/allianz/cpp_devkit_debug/ .. -A x64 -G "Visual Studio 15 2017"
+cmake --build . --config Debug
+cmake --build . --target INSTALL --config Debug
+
+Math:
+cd C:\dev3\at.allianz.abs.cpp.math-21.0.304.09
+mkdir build
+cd build
+cmake .. -A x64 -DCMAKE_BUILD_TYPE=Debug -DLOCAL_CPP_DEVKIT=C:/dev3/allianz/cpp_devkit_debug/ -DCMAKE_INSTALL_PREFIX=C:/dev3/allianz/abs-sdk-debug -G "Visual Studio 15 2017"
+cmake --build . --config Debug
+cmake --build . --target INSTALL --config Debug
+
+====================
+22.0.33-alpha.4
+
+ARG NEXUS_URL="https://synciercpldependencies.blob.core.windows.net/nexus/QXRDnJpwt7YvCRXOCf8NekDP4QkuTbSL"
+ARG CPP_DEVKIT_VERSION="22.0.33-alpha.4"
+
+wget ${NEXUS_URL}/other_dependencies/de.syncier.abs.cpp.math-${CPP_DEVKIT_VERSION}.zip && unzip de.syncier.abs.cpp.math-${CPP_DEVKIT_VERSION}.zip &&  rm de.syncier.abs.cpp.math-${CPP_DEVKIT_VERSION}.zip
+curl -O https://synciercpldependencies.blob.core.windows.net/nexus/QXRDnJpwt7YvCRXOCf8NekDP4QkuTbSL/other_dependencies/de.syncier.abs.cpp.math-22.0.33-alpha.4.zip
+
+
+ARG ABS_SDK_VERSION="21.0.305.35"
+wget ${NEXUS_URL}/nexus/content/repositories/deliveries/at/allianz/abs/cpp/math/at.allianz.abs.cpp.math/${ABS_SDK_VERSION}/at.allianz.abs.cpp.math-${ABS_SDK_VERSION}.zip && \
+    unzip at.allianz.abs.cpp.math-${ABS_SDK_VERSION} -d at.allianz.abs.cpp.math-${ABS_SDK_VERSION} && \
+    rm at.allianz.abs.cpp.math-${ABS_SDK_VERSION}.zip
+
+curl -O https://synciercpldependencies.blob.core.windows.net/nexus/QXRDnJpwt7YvCRXOCf8NekDP4QkuTbSL/nexus/content/repositories/deliveries/at/allianz/abs/cpp/math/at.allianz.abs.cpp.math/21.0.305.35/at.allianz.abs.cpp.math-21.0.305.35.zip
+=======================
+
+Mathematical core components newer versions:
+
+wget https://synciercpldependencies.blob.core.windows.net/nexus/QXRDnJpwt7YvCRXOCf8NekDP4QkuTbSL/nexus/content/repositories/deliveries/at/allianz/abs/cpp/math/at.allianz.abs.cpp.math/21.0.305.35/at.allianz.abs.cpp.math-21.0.305.35.zip && \
+    unzip at.allianz.abs.cpp.math-21.0.305.35 -d at.allianz.abs.cpp.math-21.0.305.35 && \
+    rm at.allianz.abs.cpp.math-21.0.305.35.zip
+
+Mathematical core components olderversions:
+
+wget https://synciercpldependencies.blob.core.windows.net/nexus/QXRDnJpwt7YvCRXOCf8NekDP4QkuTbSL/other_dependencies/de.syncier.abs.cpp.math-21.0.304.09.zip && \
+    unzip at.allianz.abs.cpp.math-21.0.305.35 -d at.allianz.abs.cpp.math-21.0.305.35 && \
+    rm at.allianz.abs.cpp.math-21.0.305.35.zip
+=======================
+Debug
+
+- Beliebiges Directory erzeugen
+ 
+create c:\work\rss
+
+- Dort folgendes rein kopieren aus 
+
+  C:\dev\allianz\abs-sdk-debug\v21.0.304.09\bin
+    - rss.exe
+    - rsw.exe
+
+  C:\dev\allianz\abs-sdk-debug\v21.0.304.09\lib
+    - math_abs.dll
+    - math_if.dll
+    - math_life.dll
+
+  C:\dev\at.allianz.abs.cpp.math-21.0.304.09\GFB_ORBIT\java\plugins\com.ibm.db2 all db2 libs
+    - db2jcc.jar
+    - db2jcc_license_cisuz.jar
+    - db2jcc_license_cu.jar
+
+  C:\dev\allianz\abs-sdk-debug\v21.0.304.09\bin\orbitsocketadapter
+   - orbit.dll
+
+  C:\dev\at.allianz.abs.cpp.math-21.0.304.09\CPP_BASIS\java\lib\
+    - jdbcjni.jar
+
+  Config:
+
+  C:\dev\at.allianz.abs.cpp.math-21.0.304.09\ABS_MATHCOM\scripts\docker\rss210\allianz-math
+   - math.ini
+   - math_trace.cfg
+   - rss_logger.cfg
+
+  C:\dev\allianz\abs-sdk-debug\v21.0.304.09\etc\math_life\
+   - TLifeLstrgdat.zip
+
+- Config anpassen: math.ini 
+
+- start-script erstellen
+    im Pfad muss "<java-installation>\jdk-<version>\bin\server" enthalten sein
+
+-  rss als administratoir starten und Visual Studio als Administrator starten und an den Prozess atachen
+
+
+- Post absetzen an http://localhost:18100/rss/compute/contract?type=math_life und als body den c:\work\rss\json.req 
+
+=====================
+DB2JCC_VERSION_NUMBER="4.19.49"
+ DOWNLOAD_URL="allianz"
+NEXUS_URL="https://synciercpldependencies.blob.core.windows.net/nexus/QXRDnJpwt7YvCRXOCf8NekDP4QkuTbSL/nexus/content/repositories"
+
+DB2JCC_URL="${NEXUS_URL}/thirdparty/com/ibm/db2/jcc/db2jcc/${DB2JCC_VERSION_NUMBER}/db2jcc-${DB2JCC_VERSION_NUMBER}.jar" \
+DB2JCC_LICENSE_CISUZ_URL="${NEXUS_URL}/thirdparty/com/ibm/db2/jcc/db2jcc_license_cisuz/${DB2JCC_VERSION_NUMBER}/db2jcc_license_cisuz-${DB2JCC_VERSION_NUMBER}.jar" \
+DB2JCC_LICENSE_CU_URL="${NEXUS_URL}/thirdparty/com/ibm/db2/jcc/db2jcc_license_cu/${DB2JCC_VERSION_NUMBER}/db2jcc_license_cu-${DB2JCC_VERSION_NUMBER}.jar" \
+JDBC_INI_URL="${NEXUS_URL}/deliveries/at/${DOWNLOAD_URL}/abs/cpp/base/jdbcjni/15.5.300-20160223095200/jdbcjni-15.5.300-20160223095200.jar" \
+    
+
+db2:
+https://synciercpldependencies.blob.core.windows.net/nexus/QXRDnJpwt7YvCRXOCf8NekDP4QkuTbSL/nexus/content/repositories/thirdparty/com/ibm/db2/jcc/db2jcc/4.19.49/db2jcc-4.19.49.jar
+https://synciercpldependencies.blob.core.windows.net/nexus/QXRDnJpwt7YvCRXOCf8NekDP4QkuTbSL/nexus/content/repositories/thirdparty/com/ibm/db2/jcc/db2jcc_license_cisuz/4.19.49/db2jcc_license_cisuz-4.19.49.jar
+https://synciercpldependencies.blob.core.windows.net/nexus/QXRDnJpwt7YvCRXOCf8NekDP4QkuTbSL/nexus/content/repositories/thirdparty/com/ibm/db2/jcc/db2jcc_license_cu/4.19.49/db2jcc_license_cu-4.19.49.jar
+https://synciercpldependencies.blob.core.windows.net/nexus/QXRDnJpwt7YvCRXOCf8NekDP4QkuTbSL/nexus/content/repositories/deliveries/at/allianz/abs/cpp/base/jdbcjni/15.5.300-20160223095200/jdbcjni-15.5.300-20160223095200.jar
+
+
+=====================
+
+JSON Request:
+settings": [{
+			"name": "DD_URL",
+			"value": "jdbc:db2:10.31.98.9:50000/DTSYN210:sslConnection\u003dtrue;currentFunctionPath\u003dABS,SYSFUN;useJDBC4ColumnNameAndLabelSemantics\u003d2;",
+			"section": "SWITCHES"
