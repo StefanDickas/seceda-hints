@@ -1,0 +1,785 @@
+{
+  "settings": [
+    {
+      "name": "DD_URL",
+      "value": "jdbc:db2://sbx-frc1-db2core1.syncier.com:50000/DTSYN01:sslConnection=false;currentFunctionPath=BABS,ABS,SYSFUN;",
+      "section": "SWITCHES"
+    },
+    {
+      "name": "DD_FLQ",
+      "value": "ABS",
+      "section": "SWITCHES"
+    },
+    {
+      "name": "DD_CREDENTIALS",
+      "value": "YWJzZGVtb0BzeW5jaWVyLmNvbTpDaWQ4Y2hpUXVlaTEyMw==",
+      "section": "SWITCHES"
+    }
+  ],
+  "contract": {
+    "TVERTRAG": {
+      "primaryKeys": "VERTR#",
+      "new": [
+        {
+          "POBJ_HANDLE": "11909",
+          "VERTR#": "9b893118-7f51-11eb-a355-00059a3c7a00",
+          "FIRMA": "L",
+          "DION": "6",
+          "HSP_EIGEN": "LE",
+          "POLLFNR": "",
+          "VERTRART": "E",
+          "STADIUM": "1",
+          "BEGDAT": "2021-03-01",
+          "WIRKBEGDAT": "2021-03-01",
+          "ABLDAT": "2041-03-01",
+          "HPTFLLG": "0103",
+          "WERBERNR": "0790012",
+          "HAFTAENDDAT": "0001-01-01",
+          "KZDECKUNG": "N",
+          "KZWILLENSERKL": "N",
+          "KZTYPBUEND": "",
+          "FLOTTENNR": "",
+          "TARIFBEREICH": "E",
+          "ZUSTAND": "A",
+          "HSP_PRODKBEZ": "TEMPA",
+          "KONTOSTATUS": "0",
+          "STATUSDATUM": "2021-03-01",
+          "FZSDAT": "0001-01-01",
+          "KZPRGUTHLISTE": "",
+          "KZUJZ": "J",
+          "ZAHLWEISE": "M",
+          "BEZBISDATUM": "2021-03-01",
+          "INKASSOART": "E",
+          "SALDO": "0",
+          "KZ_DIREKTMAIL_AKT": "N",
+          "KZ_BEILAGEN": "J",
+          "FREMDWAEHRUNG": "",
+          "DARLKAPITAL": "0",
+          "SUPRABL": "0",
+          "ORIGDOKADR": "VN",
+          "DOKANZ": "1",
+          "DOKANZ_KOPIE": "0",
+          "KOPIEDOKADR": "",
+          "KZFAB": "0",
+          "AUSFGRUND1": "G01",
+          "AUSFGRUND2": "",
+          "AUSFGRUND3": "",
+          "VERTRSTATUS": "",
+          "KZPRGUTH": "N",
+          "VERTRSTATUS_DATUM": "2021-03-07",
+          "GF#": "9b893119-7f51-11eb-a355-00059a3c7a00",
+          "NACH_VERTR#": "",
+          "ERS_VERTR#": "",
+          "HSPP#": "db929771-eb57-11e9-9d02-9cb654a0a2cc",
+          "INK_ADR#": "02dc104b-e653-11e7-989a-901b0e4acd30",
+          "INK_KK#": "",
+          "INK_BK#": "",
+          "ZUSTELL_ADR#": "02dc104b-e653-11e7-989a-901b0e4acd30",
+          "HSP_PRODBEZ": "Template MathLife",
+          "KZSAMMELEINZ": "N",
+          "KZTAGGABB": "J",
+          "VERTRAUSFGRUND": "G01",
+          "DLG": "",
+          "SPARTE_EIGEN_FUEHR": "LE",
+          "KZ_MEHRERE_IP": "",
+          "INK_GGK#": "",
+          "ERNEUERART": "",
+          "FLEARLYINVOICE": "N",
+          "SALESOFFSHORTTXT": "",
+          "CONTRACTSUBTYPE": ""
+        }
+      ]
+    },
+    "TGSCHFALL": {
+      "primaryKeys": "GF#",
+      "new": [
+        {
+          "POBJ_HANDLE": "11909",
+          "GF#": "9b893119-7f51-11eb-a355-00059a3c7a00",
+          "BEGINN": "2021-03-07",
+          "AENDERUNG": "0001-01-01",
+          "FIRMA": "L",
+          "GESCHFALL": "V",
+          "QUELLE": "",
+          "GSTUEBERNZEIT": "0001-01-01 00:00:00.000000",
+          "KZLOESCHUNG": "",
+          "GPSTATUS": "U",
+          "ERSTELLUSER": "TESTALL",
+          "SPERRUSER": "",
+          "SPRACHE": "DAU",
+          "AENDZP": "",
+          "ZEITZONE": "",
+          "FLLOCK": ""
+        },
+        {
+          "POBJ_HANDLE": "11916",
+          "GF#": "02d9c659-e653-11e7-989a-901b0e4acd30",
+          "BEGINN": "2017-12-08",
+          "AENDERUNG": "2019-10-01",
+          "FIRMA": "X",
+          "GESCHFALL": "P",
+          "QUELLE": "SO",
+          "GSTUEBERNZEIT": "0005-01-01 00:00:00.000000",
+          "KZLOESCHUNG": "",
+          "GPSTATUS": "",
+          "ERSTELLUSER": "TESTALL",
+          "SPERRUSER": "",
+          "SPRACHE": "DAU",
+          "AENDZP": "2019-10-03 15:25:26.189816",
+          "ZEITZONE": "",
+          "FLLOCK": ""
+        }
+      ]
+    },
+    "TVERSVERTRAG": {
+      "primaryKeys": "VERSV#",
+      "new": [
+        {
+          "POBJ_HANDLE": "12043",
+          "VERSV#": "aef45a4c-7f51-11eb-a355-00059a3c7a00",
+          "SORTIERUNG": "100",
+          "SPARTE_EIGEN": "LE",
+          "ZUSTAND": "A",
+          "BEGINNDAT": "2021-03-01",
+          "ABLAUFDAT": "2041-03-01",
+          "WIRKBEGINN": "2021-03-01",
+          "TARIFDATUM": "0001-01-01",
+          "LERNEUDAT": "2021-03-01",
+          "BEDINGUNG": "",
+          "TARIF": "********",
+          "SPROZ": "0",
+          "JPRNETTO": "0",
+          "JPRBRUTTO": "0",
+          "EIGENANTEIL": "100",
+          "DAUERRABATT": "0",
+          "BUENDELRABATT": "0",
+          "VERGVRABATT": "0",
+          "SANZUSCHL": "0",
+          "RISIKOKLASSE": "",
+          "KZINDEX": "N",
+          "VERTZUSTDET": "",
+          "BEOBENDE": "0001-01-01",
+          "KZBEARBEITBAR": "J",
+          "SPP#": "f3efc636-eb57-11e9-9d02-9cb654a0a2cc",
+          "SP_PRODKBEZ": "12345",
+          "SP_GRP": "LE",
+          "BEGINNVERLDAT": "0001-01-01",
+          "BDL_CODE": "XX",
+          "KZLOHNSUMMABR": "",
+          "KZVST": "J",
+          "VERTR#": "9b893118-7f51-11eb-a355-00059a3c7a00",
+          "VARIANTE": "",
+          "SP_PRODBEZ": "Endowment",
+          "INLANDSANTEIL": "100",
+          "JPRNETTO100": "0",
+          "ZUSKOSPEZREGEL": "",
+          "SANKZ": "",
+          "DECKUNGSGRUPPE": "",
+          "VVLAUFNR": "0",
+          "MELDEPFLICHT": ""
+        }
+      ]
+    },
+    "TPRODAUS": {
+      "primaryKeys": "PAP#",
+      "new": [
+        {
+          "POBJ_HANDLE": "12139",
+          "PAP#": "b0fdbeea-7f51-11eb-a355-00059a3c7a00",
+          "SORTIERUNG5": "10",
+          "SUMME": "100000",
+          "SUMARTBEZ": "VS",
+          "JAHRESTPR_NETTO": "0",
+          "BAUSTEINTYP": "H",
+          "ANZEBENE": "1",
+          "KZSACHART": "P",
+          "KZWANPAUS": "N",
+          "FAKTOR": "0",
+          "PBLAUFNR": "81571",
+          "INSTANZID": "0",
+          "ENTSCHAEDWERT": "",
+          "VERSV#": "aef45a4c-7f51-11eb-a355-00059a3c7a00",
+          "PSCHABL#": "d68ba050-6203-11ea-a556-e86a64ac6ccc",
+          "PRODBAUBEZ": "Template rating X",
+          "JAHRESTPR_NETTO100": "0",
+          "UEBERINSTANZID": "0",
+          "TECHN_PREIS": "0",
+          "FLWEBHIDDEN": "N"
+        }
+      ]
+    },
+    "TPAPVORGABENLEBEN": {
+      "primaryKeys": "PAP#",
+      "new": [
+        {
+          "POBJ_HANDLE": "12149",
+          "PAP#": "b0fdbeea-7f51-11eb-a355-00059a3c7a00",
+          "PROZ_HTARIF": "0",
+          "CBX_AUSGEWGUTHABEN": "N",
+          "CBX_RPRAEMIE": "N",
+          "CBX_GEWINNEINRECHNUNG": "N",
+          "CBX_TBG": "N",
+          "CBX_RZDV": "N",
+          "RICHTPRAEMIEV": "0",
+          "ABLEBENSSUMME": "0",
+          "FONDS_PERFORM": "7",
+          "ABLAUFGEWINN1": "0",
+          "ABLAUFGEWINN2": "0",
+          "ABLAUFGEWINN3": "0",
+          "ABLAUFGEWINN4": "0",
+          "PRAEMIEPOLDRUCK": "0",
+          "JAHRESRENTE": "0",
+          "JAHRESRENTEGEWINN": "0",
+          "GEWINNGUTHABEN": "0",
+          "LEISTUNGVERBLEIB": "0",
+          "LEISTUNGVERBLEIBGEWINN": "0",
+          "VERGEWINNANTEIL": "0",
+          "RKWZEROPERF": "0",
+          "PFLEGESTUFE": "0",
+          "KOSTGARANTIE": ""
+        }
+      ]
+    },
+    "TBEZUGSRECHT": {
+      "primaryKeys": "BEZRE#",
+      "new": [
+        {
+          "POBJ_HANDLE": "12161",
+          "BEZRE#": "b1140613-7f51-11eb-a355-00059a3c7a00",
+          "BEZRECHT_RISIKO": "A",
+          "BEZRECHTART": "",
+          "PAP#": "b0fdbeea-7f51-11eb-a355-00059a3c7a00",
+          "KZUNWIDERRUFLICH": "N",
+          "EINGDAT": "0001-01-01",
+          "BEZRECHT_RANGF": "0"
+        },
+        {
+          "POBJ_HANDLE": "12162",
+          "BEZRE#": "b1142d24-7f51-11eb-a355-00059a3c7a00",
+          "BEZRECHT_RISIKO": "E",
+          "BEZRECHTART": "VN",
+          "PAP#": "b0fdbeea-7f51-11eb-a355-00059a3c7a00",
+          "KZUNWIDERRUFLICH": "N",
+          "EINGDAT": "0001-01-01",
+          "BEZRECHT_RANGF": "0"
+        }
+      ]
+    },
+    "TLEBENSCHICHT": {
+      "primaryKeys": "LSCH#",
+      "new": [
+        {
+          "POBJ_HANDLE": "12140",
+          "LSCH#": "b0fde5fb-7f51-11eb-a355-00059a3c7a00",
+          "SUMMEBFR": "0",
+          "LEISTUNGSDAUER": "0",
+          "PRZAHLDAUER": "0",
+          "VERSDAUER": "240",
+          "TARLEIST": "0",
+          "TARLEISTBFR": "0",
+          "PRSUMME_BRUTTO": "0",
+          "PAP#": "b0fdbeea-7f51-11eb-a355-00059a3c7a00",
+          "ZUSTAND": "A",
+          "VERTZUSTDET": "",
+          "LSCHSTODAT": "0001-01-01"
+        }
+      ]
+    },
+    "TLSCHDETAIL": {
+      "primaryKeys": "LSCHDET#",
+      "new": [
+        {
+          "POBJ_HANDLE": "12142",
+          "LSCHDET#": "b0fde5fc-7f51-11eb-a355-00059a3c7a00",
+          "SORTIERUNG": "1",
+          "TECHBEGINN": "2021-03-01",
+          "TARBEZEICHNUNG": "T12345",
+          "JAHRESTPR_NETTO": "0",
+          "SBEITRPRAEMIE": "0",
+          "SBEITRRESERVE": "0",
+          "GEWBETEILART": "A",
+          "AUSGEWINNDATUM": "2021-03-07",
+          "AUSGEWGUTHABEN": "0",
+          "GEWBUCHUNGSBETRAG": "0",
+          "GEWBUCHUNGSART": "",
+          "GEWANTEIL1": "0",
+          "BASIS_ZINSGEW": "0",
+          "BASIS_ZUSGEW": "0",
+          "BASIS_RISGEW": "0",
+          "SCHLUSSGEW": "0",
+          "GEWHILFSGROESSE": "0",
+          "GEWINNBERECHDAT": "0001-01-01",
+          "SBGEWINN": "0",
+          "SBGARANTWERT": "0",
+          "BEGDATUMGWBET": "0001-01-01",
+          "SBEITROAK": "0",
+          "SUBEI": "0",
+          "GEWZUTEILUNG_VJ": "0",
+          "ZINSGEWHILFSGR": "0",
+          "RISGEWHILFSGR": "0",
+          "KZUNISEX": "",
+          "SUMME": "0",
+          "SUMMEBFR": "0",
+          "TARLEIST": "0",
+          "TARLEISTBFR": "0",
+          "PRSUMME_BRUTTO": "0",
+          "SPARPRAEMIE": "0",
+          "RISIKOPRAEMIE": "0",
+          "ABKOSTPR": "0",
+          "ABEINMKOSTPR": "0",
+          "VWKOSTPR": "0",
+          "SSPARPRAEMIE": "0",
+          "SRISIKOPRAEMIE": "0",
+          "SABKOSTPR": "0",
+          "SVWKOSTPR": "0",
+          "EINTRALTER": "0",
+          "BEITRALTER": "0",
+          "RISIKOGRUPPE": "",
+          "ZUSCHLKLASSE": "",
+          "EINTRALTER_MVP": "0",
+          "BEITRALTER_MVP": "0",
+          "RISIKOGRUPPE_MVP": "",
+          "ZUSCHLKLASSE_MVP": "",
+          "RENTEN_JRNETTO": "0",
+          "AUSGRENTE": "0",
+          "VTAR#": "b7c65df0-d5b5-11dd-9e6c-6f0f671c010f",
+          "LSCH#": "b0fde5fb-7f51-11eb-a355-00059a3c7a00",
+          "WAITING_PERIOD": "0"
+        }
+      ]
+    },
+    "TLEBKOSTSCHICHT": {
+      "primaryKeys": "LKS#",
+      "new": [
+        {
+          "POBJ_HANDLE": "12283",
+          "LKS#": "e10212e7-7f51-11eb-a355-00059a3c7a00",
+          "KOSTBELASTBEG": "0001-01-01",
+          "KOSTBELASTENDE": "0001-01-01",
+          "BWS_KOSTBELAST": "0",
+          "LSCHDET#": "b0fde5fc-7f51-11eb-a355-00059a3c7a00",
+          "KOSTTILG": "E",
+          "ALPHAKOSTENSATZ": "0",
+          "SORTIERUNG": "0"
+        },
+        {
+          "POBJ_HANDLE": "12284",
+          "LKS#": "e1026108-7f51-11eb-a355-00059a3c7a00",
+          "KOSTBELASTBEG": "0001-01-01",
+          "KOSTBELASTENDE": "0001-01-01",
+          "BWS_KOSTBELAST": "0",
+          "LSCHDET#": "b0fde5fc-7f51-11eb-a355-00059a3c7a00",
+          "KOSTTILG": "L",
+          "ALPHAKOSTENSATZ": "0",
+          "SORTIERUNG": "0"
+        }
+      ]
+    },
+    "TLSCHZUSATZ": {
+      "primaryKeys": "LSZUS#",
+      "new": [
+        {
+          "POBJ_HANDLE": "12144",
+          "LSZUS#": "b0fde5fd-7f51-11eb-a355-00059a3c7a00",
+          "ZUSBEZEICHNUNG": "FAKTO",
+          "ZUSTYP": "A",
+          "ZUSWERT": "1,0000",
+          "LSCH#": "b0fde5fb-7f51-11eb-a355-00059a3c7a00"
+        },
+        {
+          "POBJ_HANDLE": "12146",
+          "LSZUS#": "b0fde5fe-7f51-11eb-a355-00059a3c7a00",
+          "ZUSBEZEICHNUNG": "FIRET",
+          "ZUSTYP": "D",
+          "ZUSWERT": "0001-01-01",
+          "LSCH#": "b0fde5fb-7f51-11eb-a355-00059a3c7a00"
+        },
+        {
+          "POBJ_HANDLE": "12147",
+          "LSZUS#": "b0fde5ff-7f51-11eb-a355-00059a3c7a00",
+          "ZUSBEZEICHNUNG": "ANPRO",
+          "ZUSTYP": "G",
+          "ZUSWERT": "0",
+          "LSCH#": "b0fde5fb-7f51-11eb-a355-00059a3c7a00"
+        },
+        {
+          "POBJ_HANDLE": "12148",
+          "LSZUS#": "b0fde600-7f51-11eb-a355-00059a3c7a00",
+          "ZUSBEZEICHNUNG": "BERME",
+          "ZUSTYP": "X",
+          "ZUSWERT": "1",
+          "LSCH#": "b0fde5fb-7f51-11eb-a355-00059a3c7a00"
+        }
+      ]
+    },
+    "TPROVBEMGR": {
+      "primaryKeys": "PBG#",
+      "new": [
+        {
+          "POBJ_HANDLE": "12151",
+          "PBG#": "b0fde602-7f51-11eb-a355-00059a3c7a00",
+          "BWS1_MATH": "0",
+          "BWS1_ANGEW": "0",
+          "BWS2_MATH": "0",
+          "BWS2_ANGEW": "0",
+          "FJPR_MATH": "0",
+          "FJPR_ANGEW": "0",
+          "BWS1DK_MATH": "0",
+          "BWS1DK_ANGEW": "0",
+          "BWS2DK_MATH": "0",
+          "BWS2DK_ANGEW": "0",
+          "BWSFP_MATH": "0",
+          "BWSFP_ANGEW": "0",
+          "PAP#": "b0fdbeea-7f51-11eb-a355-00059a3c7a00"
+        }
+      ]
+    },
+    "TVERSPERS": {
+      "primaryKeys": "PAP#;NP#",
+      "new": [
+        {
+          "POBJ_HANDLE": "12184",
+          "PAP#": "b0fdbeea-7f51-11eb-a355-00059a3c7a00",
+          "NP#": "02d9c657-e653-11e7-989a-901b0e4acd30",
+          "RISIKOGRUPPE": "",
+          "EINTRALTER": "0",
+          "KZHAUPTVP": "J",
+          "KZUNTERSUCHUNG": "N",
+          "LEISTUNGSSTAFFEL": "0",
+          "RUECKSTELLDAUER": "0",
+          "KZABLEHNUNG": "N",
+          "KZERHSPERR": "N",
+          "KZRISPRRCKGEWAEHR": "N",
+          "KZWERKTAETIG": "",
+          "RUEFAKTOR": "0",
+          "BEITRALTER": "0",
+          "LSTAFFELBETR": "0",
+          "LSTAFFELBEGINN": "0001-01-01",
+          "LSTAFFELENDE": "0001-01-01",
+          "LEBENSTATUS": "",
+          "SVANSTALT": "",
+          "FAMROLLE": "",
+          "ZUSCHLKLASSE": "0",
+          "VP_GEBDAT": "0001-01-01",
+          "VP_ARBVERH": "",
+          "VP_STERBEDATUM": "0001-01-01",
+          "BERUFSRISIKOGRUPPE": "",
+          "RAUCHERSTATUS": "2",
+          "KOERPERGROESSE": "0",
+          "KOERPERGEWICHT": "0",
+          "FAMANAMNESE": "",
+          "RISIKO_ID": "",
+          "KONFESSION": "",
+          "PHYSWORKSHARE": "0"
+        }
+      ]
+    },
+    "TZUSKOSTEN": {
+      "primaryKeys": "ZK#",
+      "new": [
+        {
+          "POBJ_HANDLE": "12280",
+          "ZK#": "e0f3bb06-7f51-11eb-a355-00059a3c7a00",
+          "ZUSKART": "VERGW",
+          "ZUSKBETR": "0",
+          "PROZENT": "0",
+          "BEFRGRUND": "",
+          "VERSV#": "aef45a4c-7f51-11eb-a355-00059a3c7a00",
+          "POSTLANDSCHL": "A",
+          "SORTIERUNG": "0",
+          "KZVONNETTOPR": "N",
+          "BEMGRPROZ": "100",
+          "BDL_CODE": ""
+        }
+      ]
+    },
+    "TVERTRZUS": {
+      "primaryKeys": "VZUS#",
+      "new": [
+        {
+          "POBJ_HANDLE": "12032",
+          "VZUS#": "aea1a66b-7f51-11eb-a355-00059a3c7a00",
+          "LBESWDAT": "0001-01-01",
+          "KUENDSTITAG": "0001-01-01",
+          "ERKLABGABDAT": "0001-01-01",
+          "DEPOTNR": "",
+          "POLNR_VORSYS": "",
+          "POLNR_VORSYSINT": "",
+          "VORSYS": "",
+          "VERGEB_FA": "",
+          "VERG_KNAME": "",
+          "CCC_EINGZP": "0001-01-01 00:00:00.000000",
+          "CCC_EINGMED": "",
+          "ZG_USERID": "",
+          "AS_ZGZP": "0001-01-01 00:00:00.000000",
+          "AS_ERLZP": "0001-01-01 00:00:00.000000",
+          "LOKTECHNAME": "",
+          "TEAMEINGDAT": "0001-01-01",
+          "GA_BETREUER": "",
+          "ANTRAGSPOLDAT": "0001-01-01",
+          "PRAEMDEP#": "",
+          "WIRTBER_ADR#": "",
+          "KREDIT_BK#": "",
+          "VERTR#": "9b893118-7f51-11eb-a355-00059a3c7a00",
+          "VRG#": "",
+          "DGK#": "",
+          "AS_RGGRUND": "",
+          "FACHGRUPPE": "",
+          "ZG_TEAM": "",
+          "BEARBUSERID": "",
+          "KZVERTEILBAR": "",
+          "STO_DATUM": "0001-01-01",
+          "VERTZUSTDET": "",
+          "VERGBEZROLLE": "",
+          "VERTRDOKADR": "",
+          "FOLGEDOKADR": "",
+          "SCHADDOKADR": "",
+          "KZVERZOFFPRAEM": "",
+          "KZRUECKREP": "",
+          "SUMBEZPR": "0",
+          "FREMDVERMITTLER": "",
+          "KZBRUTTO": "",
+          "KZVORABWTG": "",
+          "LOKTECHNAME_PERM": "",
+          "KZBESROUTGR": "",
+          "KZROUTKRITSCHAD": "",
+          "VERG_GENERATION": "0",
+          "RAHMENVERTRNAME": "",
+          "ANTRABLGRUND": "",
+          "VORSCHLAGSNR": "",
+          "EINVOICECHANNEL": "",
+          "EINV_KO#": "",
+          "FREMDPOLNR": "",
+          "INK_PC#": ""
+        }
+      ]
+    },
+    "TVNEHMER": {
+      "primaryKeys": "VERTR#;PERS#",
+      "new": [
+        {
+          "POBJ_HANDLE": "11921",
+          "VERTR#": "9b893118-7f51-11eb-a355-00059a3c7a00",
+          "PERS#": "02d9c658-e653-11e7-989a-901b0e4acd30",
+          "KZHAUPTVN": "J",
+          "VNEHMERDETBEZ": ""
+        }
+      ]
+    },
+    "TVERTR_VORGABEN": {
+      "primaryKeys": "VERTR#",
+      "new": [
+        {
+          "POBJ_HANDLE": "11911",
+          "VERTR#": "9b893118-7f51-11eb-a355-00059a3c7a00",
+          "ABFRAGESTICHTAG": "2021-04-01",
+          "ABLAUFLEISTUNGSSUMME": "0",
+          "BRUTTOFOLGEPRAEMIE": "0",
+          "RENTENHERM": "0",
+          "RENTENHERMGAR": "0",
+          "HR_DAUER": "0",
+          "CBX_TAKEOVERZUAB": "N",
+          "ABLEBSUMVG": "0",
+          "COMPTYP": "ZRS",
+          "BERECHTIGUNG": "1",
+          "INQRESULT": "",
+          "OPT_HSPP#": "",
+          "GESAMT_PPF": "0",
+          "CBX_RAUCHER1": "N",
+          "CBX_RAUCHER2": "N",
+          "KZBILANZ": "",
+          "SCHADENART": "",
+          "BEGINNDAT": "0001-01-01",
+          "CBX_CALCULATE": "Y",
+          "VAHIST": "",
+          "KZINTERNET": "",
+          "ABLAUFGEWINN": "0",
+          "PRFRSTDAT": "0001-01-01",
+          "RENTSTEIGSATZ": "0",
+          "RKFABSCHLAGSVARIANTE": "",
+          "CHECKEDREPORTPIECES": "",
+          "FOERDERSUMME": "0",
+          "FOERDERDATUM": "0001-01-01",
+          "WEITERLEITUNG": "N"
+        }
+      ]
+    },
+    "TNATPERS": {
+      "primaryKeys": "NP#",
+      "new": [
+        {
+          "POBJ_HANDLE": "11916",
+          "NP#": "02d9c657-e653-11e7-989a-901b0e4acd30",
+          "VORNAME": "Anna",
+          "FAMNAME": "Huber",
+          "AKADGRAD": "",
+          "NAMZUSATZ": "",
+          "ANRTITEL": "",
+          "GESCHLECHT": "W",
+          "FAMSTAND": "N",
+          "FAMSTAND_SEIT": "0001-01-01",
+          "GEBURTSDATUM": "1980-01-01",
+          "STERBEDATUM": "0001-01-01",
+          "KZVERSTORBEN": "N",
+          "SOZIALVERSNR": "",
+          "INTERESSE1": "",
+          "INTERESSE2": "",
+          "INTERESSE3": "",
+          "STAATSBSCHAFT": "A",
+          "SOZVERSANSPRUCH": "",
+          "GRBU_FAMNAME": "HUBER",
+          "GRBU_VORNAME": "ANNA",
+          "KZMA": "",
+          "HHROLLE": "V",
+          "KZPERSOENLICH": "S",
+          "ANLAGETYP": "",
+          "NIEDERLASSUNG": "",
+          "AUFENTHALTSDATUM": "0001-01-01",
+          "HEIMATORT": "",
+          "GEBNAME": "",
+          "HH#": "4afd0b8f-d76b-11e8-aee4-901b0e4acd30",
+          "PERS#": "02d9c658-e653-11e7-989a-901b0e4acd30",
+          "STEUERIDENTNR": "",
+          "KONFESSION": "",
+          "ADELSBEZ": "",
+          "ADELSTITEL": "",
+          "RENTENNR": "",
+          "INTERESSE_EINGABE": "",
+          "GEBURTSLAND": "",
+          "ZWNAME": "",
+          "GRBU_ZWNAME": "",
+          "KRK_SVANSTALT": "",
+          "UNF_SVANSTALT": "",
+          "PV_SVANSTALT": "",
+          "PLACEOFBIRTH": "",
+          "NATIONALITY_2": ""
+        }
+      ]
+    },
+    "TPERSON": {
+      "primaryKeys": "PERS#",
+      "new": [
+        {
+          "POBJ_HANDLE": "11916",
+          "PERS#": "02d9c658-e653-11e7-989a-901b0e4acd30",
+          "GF#": "02d9c659-e653-11e7-989a-901b0e4acd30",
+          "INK_ADR#": "",
+          "INK_KK#": "",
+          "INK_BK#": "",
+          "JAHRESPR": "0",
+          "ANZVERTR": "0",
+          "JAHRESLEI": "0",
+          "ANZSCH": "0",
+          "KZVN": "J",
+          "KZPERS": "N",
+          "BETREUER": "0000015",
+          "GESCHFELD": "P",
+          "KZ_KEST": "J",
+          "KZ_DEVINL": "J",
+          "SEKTOR": "",
+          "KUNDENNR": "",
+          "BRIEFANR": "",
+          "KZIDENTGWG": "",
+          "KUNDENNR_DISP": "",
+          "NAMENSERW_MIG": "",
+          "MANDANTENWAEHRUNG": "EUR",
+          "PREFLANGUAGE": "",
+          "KZVORSTABZ": "",
+          "VATDEDUCTIONRATE": "0",
+          "PERSVERS_TS": "0001-01-01 00:00:00.000000",
+          "OPTOUTCOMM": ""
+        }
+      ]
+    },
+    "TADRESSE": {
+      "primaryKeys": "ADR#",
+      "new": [
+        {
+          "POBJ_HANDLE": "12019",
+          "ADR#": "02dc104b-e653-11e7-989a-901b0e4acd30",
+          "HAUSNR": "1",
+          "HAUSNRZUS": "",
+          "STIEGE": "",
+          "TUERNR": "",
+          "POSTFACH": "",
+          "POSTLANDSCHL": "A",
+          "POSTLEITZAHL": "1010",
+          "GEMEINDEKZAHL": "90101",
+          "ORTSCHAFT": "Wien",
+          "ORTSTEIL": "",
+          "KZORTSTEILBED": "",
+          "STRASSE": "Akademiestraﬂe",
+          "BEDEUTUNG": "HW",
+          "WOHNART": "",
+          "VERSANDVERMERK": "",
+          "KZADRZUS": "",
+          "GRBU_ORTSCHAFT": "WIEN",
+          "KZPOST": "",
+          "PERS#": "02d9c658-e653-11e7-989a-901b0e4acd30",
+          "ADRZUS": "",
+          "BDL_CODE": "9",
+          "KZGEPRADR": "",
+          "STRASSE_TYP": "",
+          "BEZIRK": "",
+          "KZADRUNBEK": "N",
+          "KZADRUNSTRUKT": "N",
+          "FLOOR": "",
+          "POSTOFFICE": ""
+        }
+      ]
+    },
+    "TKOMM": {
+      "primaryKeys": "KO#",
+      "new": [
+        {
+          "POBJ_HANDLE": "12207",
+          "KO#": "55e1f18c-df71-11e9-863c-a08cfda6760d",
+          "KOMMART": "E",
+          "KENNUNG": "anna.huber-4111@firma.at",
+          "KOMMQUELLE": "",
+          "KOMMPRIOR": "",
+          "PERS#": "02d9c658-e653-11e7-989a-901b0e4acd30",
+          "KZPRIDIE": "",
+          "KOMMANM": "",
+          "KZKOMMDATVALID": "",
+          "KZWERBE_ERL": ""
+        }
+      ]
+    },
+    "TKOMM_VERW": {
+      "primaryKeys": "KOV#",
+      "new": [
+        {
+          "POBJ_HANDLE": "12209",
+          "KOV#": "55f5045d-df71-11e9-863c-a08cfda6760d",
+          "KOMMVERWZWECK": "F",
+          "TABLE_NAME": "TWEBZUGANG",
+          "KOMMVERWINST#": "55e1554b-df71-11e9-863c-a08cfda6760d",
+          "KO#": "55e1f18c-df71-11e9-863c-a08cfda6760d",
+          "KOMMVERWINFO": "",
+          "EWERKLZP": "0001-01-01 00:00:00.000000"
+        }
+      ]
+    },
+    "TBERUF": {
+      "primaryKeys": "BF#",
+      "new": [
+        {
+          "POBJ_HANDLE": "12216",
+          "BF#": "bd84d695-7f51-11eb-a355-00059a3c7a00",
+          "BERUF": "A421009",
+          "ARBVERH": "",
+          "ARBVERH_STATUS": "A",
+          "BETRIEBSART": "",
+          "BRANCHENSCHL": "",
+          "NP#": "02d9c657-e653-11e7-989a-901b0e4acd30",
+          "BERUFEINGABE": "",
+          "TAETIGKEITSPROFIL": "",
+          "KZHAUPTBERUF": "",
+          "AUSUEB_AB": "0001-01-01",
+          "AUSUEB_BIS": "0001-01-01"
+        }
+      ]
+    }
+  }
+}

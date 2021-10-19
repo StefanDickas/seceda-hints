@@ -130,7 +130,11 @@ https://synciercpldependencies.blob.core.windows.net/nexus/QXRDnJpwt7YvCRXOCf8Ne
 https://synciercpldependencies.blob.core.windows.net/nexus/QXRDnJpwt7YvCRXOCf8NekDP4QkuTbSL/nexus/content/repositories/thirdparty/com/ibm/db2/jcc/db2jcc_license_cu/4.19.49/db2jcc_license_cu-4.19.49.jar
 https://synciercpldependencies.blob.core.windows.net/nexus/QXRDnJpwt7YvCRXOCf8NekDP4QkuTbSL/nexus/content/repositories/deliveries/at/allianz/abs/cpp/base/jdbcjni/15.5.300-20160223095200/jdbcjni-15.5.300-20160223095200.jar
 
+=====================
 
+"absdemo@syncier.com", "Cid8chiQuei123"
+
+base64: YWJzZGVtb0BzeW5jaWVyLmNvbTpDaWQ4Y2hpUXVlaTEyMw==
 =====================
 
 JSON Request:
@@ -138,3 +142,11 @@ settings": [{
 			"name": "DD_URL",
 			"value": "jdbc:db2:10.31.98.9:50000/DTSYN210:sslConnection\u003dtrue;currentFunctionPath\u003dABS,SYSFUN;useJDBC4ColumnNameAndLabelSemantics\u003d2;",
 			"section": "SWITCHES"
+
+
+=========================
+
+"jdbc:db2://10.31.98.9:50100/DGSYN210:sslConnection\u003dtrue;currentFunctionPath\u003dABS,SYSFUN;useJDBC4ColumnNameAndLabelSemantics\u003d2;"
+
+
+jdbc:db2://sbx-frc1-db2core1.syncier.com:50000/DTSYN01:sslConnection=false;currentFunctionPath=BABS,ABS,SYSFUN;"

@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.10">
+<meta name="author" content="ABS Core Competence Center">
+<title>III. Calculus Prime Life</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+/* Uncomment @import statement to use as custom stylesheet */
+/*@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";*/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}
+audio,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+a{background:none}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}
+dfn{font-style:italic}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,*::before,*::after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0;direction:ltr}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:0}
+p{font-family:inherit;font-weight:400;font-size:1em;line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em;height:0}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{font-size:1em;line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0;font-size:1em}
+ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
+ul.square{list-style-type:square}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+abbr,acronym{text-transform:uppercase;font-size:90%;color:rgba(0,0,0,.8);border-bottom:1px dotted #ddd;cursor:help}
+abbr{text-transform:none}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote cite{display:block;font-size:.9375em;color:rgba(0,0,0,.6)}
+blockquote cite::before{content:"\2014 \0020"}
+blockquote cite a,blockquote cite a:visited{color:rgba(0,0,0,.6)}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede}
+table thead,table tfoot{background:#f7f8f7}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt{background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{display:table-cell;line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+.clearfix::after,.float-group::after{clear:both}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed;word-wrap:break-word}
+:not(pre)>code.nobreak{word-wrap:normal}
+:not(pre)>code.nowrap{white-space:nowrap}
+pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
+pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
+pre>code{display:block}
+pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+b.button::before{content:"[";padding:0 3px 0 2px}
+b.button::after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin-left:auto;margin-right:auto;margin-top:0;margin-bottom:0;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
+#content::before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span::before{content:"\00a0\2013\00a0"}
+#header .details br+span.author::before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark::before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber::after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #dddddf;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #e7e7e9;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9;left:auto;right:0}}
+@media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:100%;background:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:rgba(255,255,255,.8);line-height:1.44}
+#content{margin-bottom:.625em}
+.sect1{padding-bottom:.625em}
+@media screen and (min-width:768px){#content{margin-bottom:1.25em}
+.sect1{padding-bottom:1.25em}}
+.sect1:last-child{padding-bottom:0}
+.sect1+.sect1{border-top:1px solid #e7e7e9}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+details>summary:first-of-type{cursor:pointer;display:list-item;outline:none;margin-bottom:.75em}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+.paragraph.lead>p,#preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+table.tableblock #preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:inherit}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6)}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border-style:solid;border-width:1px;border-color:#e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;-webkit-border-radius:4px;border-radius:4px}
+.exampleblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child{margin-bottom:0}
+.sidebarblock{border-style:solid;border-width:1px;border-color:#dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;-webkit-border-radius:4px;border-radius:4px}
+.sidebarblock>:first-child{margin-top:0}
+.sidebarblock>:last-child{margin-bottom:0}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock>.content>pre{-webkit-border-radius:4px;border-radius:4px;word-wrap:break-word;overflow-x:auto;padding:1em;font-size:.8125em}
+@media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
+@media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
+.literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class="highlight"],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
+.literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
+.listingblock:hover code[data-lang]::before{display:block}
+.listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
+.listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;-webkit-border-radius:4px;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.prettyprint{background:#f7f7f8}
+pre.prettyprint .linenums{line-height:1.45;margin-left:2em}
+pre.prettyprint li{background:none;list-style-type:inherit;padding-left:0}
+pre.prettyprint li code[data-lang]::before{opacity:1}
+pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
+table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
+table.linenotable td.code{padding-left:.75em}
+table.linenotable td.linenos{border-right:1px solid currentColor;opacity:.35;padding-right:.5em}
+pre.pygments .lineno{border-right:1px solid currentColor;opacity:.35;display:inline-block;margin-right:.75em}
+pre.pygments .lineno::before{content:"";margin-right:-.125em}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
+.verseblock{margin:0 1em 1.25em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract blockquote::before,.quoteblock.excerpt blockquote::before,.quoteblock .quoteblock blockquote::before{display:none}
+.quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
+.quoteblock.abstract{margin:0 1em 1.25em;display:block}
+.quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+.quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
+.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;text-align:left;margin-right:0}
+table.tableblock{max-width:100%;border-collapse:separate}
+p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content>:last-child{margin-bottom:-1.25em}
+td.tableblock>.content>:last-child.sidebarblock{margin-bottom:0}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>thead>tr>.tableblock,table.grid-all>tbody>tr>.tableblock{border-width:0 1px 1px 0}
+table.grid-all>tfoot>tr>.tableblock{border-width:1px 1px 0 0}
+table.grid-cols>*>tr>.tableblock{border-width:0 1px 0 0}
+table.grid-rows>thead>tr>.tableblock,table.grid-rows>tbody>tr>.tableblock{border-width:0 0 1px}
+table.grid-rows>tfoot>tr>.tableblock{border-width:1px 0 0}
+table.grid-all>*>tr>.tableblock:last-child,table.grid-cols>*>tr>.tableblock:last-child{border-right-width:0}
+table.grid-all>tbody>tr:last-child>.tableblock,table.grid-all>thead:last-child>tr>.tableblock,table.grid-rows>tbody>tr:last-child>.tableblock,table.grid-rows>thead:last-child>tr>.tableblock{border-bottom-width:0}
+table.frame-all{border-width:1px}
+table.frame-sides{border-width:0 1px}
+table.frame-topbot,table.frame-ends{border-width:1px 0}
+table.stripes-all tr,table.stripes-odd tr:nth-of-type(odd),table.stripes-even tr:nth-of-type(even),table.stripes-hover tr:hover{background:#f8f8f7}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{display:table-cell;line-height:1.6;background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+ol>li p,ul>li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+ul.checklist{margin-left:.625em}
+ul.checklist li>p:first-child>.fa-square-o:first-child,ul.checklist li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist li>p:first-child>input[type="checkbox"]:first-child{margin-right:.25em}
+ul.inline{display:-ms-flexbox;display:-webkit-box;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.inline>li{margin-left:1.25em}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:solid 4px #fff;-webkit-box-shadow:0 0 0 1px #ddd;box-shadow:0 0 0 1px #ddd}
+.imageblock.left{margin:.25em .625em 1.25em 0}
+.imageblock.right{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+.gist .file-data>table{border:0;background:#fff;width:100%;margin-bottom:0}
+.gist .file-data>table td.line-data{width:99%}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background:#00fafa}
+.black{color:#000}
+.black-background{background:#000}
+.blue{color:#0000bf}
+.blue-background{background:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background:#fa00fa}
+.gray{color:#606060}
+.gray-background{background:#7d7d7d}
+.green{color:#006000}
+.green-background{background:#007d00}
+.lime{color:#00bf00}
+.lime-background{background:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background:#7d0000}
+.navy{color:#000060}
+.navy-background{background:#00007d}
+.olive{color:#606000}
+.olive-background{background:#7d7d00}
+.purple{color:#600060}
+.purple-background{background:#7d007d}
+.red{color:#bf0000}
+.red-background{background:#fa0000}
+.silver{color:#909090}
+.silver-background{background:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);-webkit-border-radius:100px;border-radius:100px;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]::after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,span.alt{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;-webkit-box-shadow:0 1px 4px #e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@page{margin:1.25cm .75cm}
+@media print{*{-webkit-box-shadow:none!important;box-shadow:none!important;text-shadow:none!important}
+html{font-size:80%}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span::before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]::before{display:block}
+#footer{padding:0 .9375em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+@media print,amzn-kf8{#header>h1:first-child{margin-top:1.25rem}
+.sect1{padding:0!important}
+.sect1+.sect1{border:0}
+#footer{background:none}
+#footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="article">
+<div id="header">
+<h1>III. Calculus Prime Life</h1>
+<div class="details">
+<span id="author" class="author">ABS Core Competence Center</span><br>
+</div>
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_installation_ofcalculus_prime_life">1. Installation of Calculus Prime Life</a></li>
+<li><a href="#_cpl_application_and_basic_concepts">2. CPL application and basic concepts</a>
+<ul class="sectlevel2">
+<li><a href="#_user_administration">2.1. User Administration</a></li>
+<li><a href="#_elements_ofcalculus_prime_life">2.2. Elements of Calculus Prime Life</a>
+<ul class="sectlevel3">
+<li><a href="#_calculation_rules">2.2.1. Calculation rules</a></li>
+<li><a href="#_interfaces">2.2.2. Interfaces</a>
+<ul class="sectlevel4">
+<li><a href="#_creation_of_internal_interface">Creation of Internal Interface</a></li>
+<li><a href="#_creation_of_external_interfaces">Creation of External Interfaces</a></li>
+</ul>
+</li>
+<li><a href="#_tariff_meta_model">2.2.3. Tariff Meta model</a></li>
+<li><a href="#_classes">2.2.4. Classes</a></li>
+<li><a href="#_formulas">2.2.5. Formulas</a></li>
+<li><a href="#_tables_and_table_meta_models">2.2.6. Tables and Table meta models</a></li>
+<li><a href="#_interfaces_as_connection_to_tables">2.2.7. Interfaces as connection to tables</a></li>
+</ul>
+</li>
+<li><a href="#_calculus_prime_life_and_its_connection_to_abs_data_base">2.3. Calculus Prime Life and its connection to abs data base</a></li>
+</ul>
+</li>
+<li><a href="#_setup_of_macro_definition_and_c_generator_incalculus_prime_life">3. Setup of macro definition and C-generator in Calculus Prime Life</a></li>
+<li><a href="#_useful_naming_convention">4. Useful naming convention</a></li>
+<li><a href="#_calculus_prime_life_version_check">5. Calculus Prime Life Version Check</a></li>
+<li><a href="#_deployment_process_out_of_calculus_prime_life">6. Deployment process out of Calculus Prime Life</a></li>
+<li><a href="#_integration_of_calculus_prime_life_artefacts">7. Integration of Calculus Prime Life artefacts</a></li>
+<li><a href="#_integration_of_cpl_generated_c_code_into_mom">8. Integration of CPL generated C code into MOM</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_installation_ofcalculus_prime_life">1. Installation of Calculus Prime Life</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The necessary software installation can be found on O:\PROJEKTE\Projekte ABS Kern\2021\C1 - Contract\02 - Sub projects\C1 - Enhancement CPL.</p>
+</div>
+<div class="paragraph">
+<p>Some of the steps require currently Administrator rights therefore it might be necessary to have somebody from operations at hand during the installation.</p>
+</div>
+<div class="paragraph">
+<p>Necessary steps:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Install PostGreS Driver<br>
+This is included in <em>psqlodbc_x86.msi</em>.</p>
+</li>
+<li>
+<p>Run CPL Installation Package</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Installation of Calculus Prime Life package</strong></p>
+</div>
+<div class="paragraph">
+<p>The current Calculus Prime Life package is 21.0.105.04 the installation may need administrator rights.
+The installation installs Calculus Prime Life without a database. When opening Calculus Prime Life a new local database is created.</p>
+</div>
+<div class="paragraph">
+<p><strong>Existing databases</strong>
+If an existing database is to be used, copy that into a local folder. Open CP Life and change the path of the local database.</p>
+</div>
+<div id="img-install001" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/install001.jpg" alt="install001">
+</div>
+<div class="title">Figure 1. Change local database path</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_cpl_application_and_basic_concepts">2. CPL application and basic concepts</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>CPL is tool which is responsible for generation of mathematical subsystems. Complex calculation rules can be stored and edited in CPL data base which is then fed into external systems (ABS).  CPL is tool that can be used, for example, to develop a large part of the actuarial mathematics of a data processing application in life insurance.</p>
+</div>
+<div class="paragraph">
+<p>Objectives of CPL are following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Development of mathematical subsystems largely independent of a specific application in order to enable their use in different applications</p>
+</li>
+<li>
+<p>Generation of subsystems that isolate the details of actuarial mathematics from the other application components. This can often prevent changes in the mathematical part from affecting other parts of the application.</p>
+</li>
+<li>
+<p>Development in a problem-oriented language in order to largely avoid the break between technical specifications and IT implementation.</p>
+</li>
+<li>
+<p>The notation and modularisation technique of actuarial mathematics are served as a model. The formula language of CPL is thus essentially a mathematical language and thus non-procedural, i.e. the user does not determine the sequence in which the operations are performed.</p>
+</li>
+<li>
+<p>of the CPL architecture from a specific product data model.</p>
+</li>
+<li>
+<p>does not require a specific product data model. In order to keep the effort for feeding the CPL data into a given product database low, the CPL development database can be adapted to the ABS database.</p>
+</li>
+<li>
+<p>High performance of the generated program code with low main memory consumption. CPL only generates program code from "basic formulas".</p>
+</li>
+<li>
+<p>of the generated code from the respective target system. CPL generates program code in C according to the ANSI specifications.</p>
+</li>
+<li>
+<p>Possibility to test of the subsystem and the calculation rules in CPL.</p>
+</li>
+<li>
+<p>Possibility to test of the subsystem and the calculation rules on the target system without application programming.</p>
+</li>
+<li>
+<p>Not only the test application, but also the test cases are portable.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Since Calculus Prime Life is standalone application for actuarial mathematics (life insurance) its data base data is intended to be incorporated in other external applications (ABS)</p>
+</div>
+<div class="paragraph">
+<p>In this document it will be later as well described how certain elements from Calculus Prime Life should be connected to ABS Data base.</p>
+</div>
+<div class="sect2">
+<h3 id="_user_administration">2.1. User Administration</h3>
+<div class="paragraph">
+<p>Like in every other application, user can access Calculus Life Prime only with appropriate access rules meaning that his/her user needs to be created in the data base. Creation of users which will use the system are mandatory. In order to create one you would go the Users node and with the right click create a new user. When new user is created, there is a list of access rights that are available for each user. These are account locked, read only right, read right in formula manager write right in tariff manager, read and write and administrator. There is also an option to lock certain elements so no other users can change them. More particular this functionality provides possibility for users to lock  tariff nodes and calculation rules. This means that users that have right to change these elements will be prohibited from this particular objects where the lock is set. Only user that has set a lock can access those. Below is the list where this can be seen.</p>
+</div>
+<div class="paragraph">
+<p>Note: Users should be named per windows login information.</p>
+</div>
+<div id="img-useradmin001" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/useradmin001.jpg" alt="useradmin001">
+</div>
+<div class="title">Figure 2. New | User</div>
+</div>
+<div id="img-useradmin002" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/useradmin002.jpg" alt="useradmin002">
+</div>
+<div class="title">Figure 3. Access rights</div>
+</div>
+<div id="img-useradmin003" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/useradmin003.jpg" alt="useradmin003">
+</div>
+<div class="title">Figure 4. User locks</div>
+</div>
+<div class="paragraph">
+<p>Under users node we can see list of already existing users. With right mouse click, user which has administrator right will have a right to rename the name or allocated rights.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_elements_ofcalculus_prime_life">2.2. Elements of Calculus Prime Life</h3>
+<div class="paragraph">
+<p>This chapter contains description of basic elements of Calculus Prime Life module. As well as high level overview of usage of these elements.
+All development data of CPL are stored in a CPL database (except for reference results from test cases)</p>
+</div>
+<div class="paragraph">
+<p>With the installation of CPL an empty database is created.</p>
+</div>
+<div class="paragraph">
+<p>Most important elements are following.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>data base</p>
+</li>
+<li>
+<p>calculation module</p>
+</li>
+<li>
+<p>tariffs or calculation rules</p>
+</li>
+<li>
+<p>tariff classes</p>
+</li>
+<li>
+<p>formulas</p>
+</li>
+<li>
+<p>interfaces (external and internal)</p>
+</li>
+<li>
+<p>tables</p>
+</li>
+<li>
+<p>generation environment</p>
+</li>
+<li>
+<p>table meta model</p>
+</li>
+<li>
+<p>tariff meta model</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The highest level of definition in CPL is calculation module. This object has a name and global specifications with regard to the size and numeric format of the tables used. The date format used in test cases and the default settings for reusable list lengths are also set in the calculation module.</p>
+</div>
+<div id="img-calcmodule" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/calcmodule.PNG" alt="calcmodule">
+</div>
+<div class="title">Figure 5. Calculation module</div>
+</div>
+<div class="paragraph">
+<p>Calculation module is also set of calculation rules, formulas interfaces tables and other elements. Usually one module will cover all specifics of life insurance tariffs per client.</p>
+</div>
+<div class="paragraph">
+<p>In Calculus Prime Life module is all about calculation rules which are created as part of one calculation module.<br>
+Calculus Prime Life can have more than one calculation module. It is important to emphasise that there is no possibility to copy and paste formulas and rules between two different modules.</p>
+</div>
+<div id="img-elements001" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/elements001.jpg" alt="elements001">
+</div>
+<div class="title">Figure 6. New calculation rule</div>
+</div>
+<div class="sect3">
+<h4 id="_calculation_rules">2.2.1. Calculation rules</h4>
+<div class="paragraph">
+<p>Calculation rule is basic element of cpl which represents set of formulas internal, external interfaces and tables. Set of calculation rules define tariff which is the assigned to the life product</p>
+</div>
+<div class="paragraph">
+<p>When creating a calculation rule a formula needs to be defined ("root formula" or "base formula") and the assignments of the interface elements of this formula. The information on the assignments made ultimately results in the control datasets, which is also called the "transport format" and ultimately controls the call of the actual formulae in application calculation rules which can be understood as a tree.<br>
+From an actuarial point of view a calculation rule can represent premium or reserve calculation, and from a technical point of view calculation rules are control data sets which are forwarded to an external application. +.</p>
+</div>
+<div class="paragraph">
+<p>Control data sets of the calculation rules are placed in the interface (integration layer) of the generated subsystem at program run time, which processes the calculation on the basis of this information which is then forwarded to the main application.<br></p>
+</div>
+<div class="paragraph">
+<p>Calculation rules cannot be defined without the following elements of Calculus Prime Life, which will be described further in this document:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Tariffs</p>
+</li>
+<li>
+<p>Formulas</p>
+</li>
+<li>
+<p>Interfaces (internal or external)</p>
+</li>
+<li>
+<p>Tables</p>
+</li>
+<li>
+<p>Tariff Meta model</p>
+</li>
+<li>
+<p>Classes</p>
+</li>
+<li>
+<p>Nodes
+In order to create new calculation rule, two things need to happen.
+First one calculation rule needs to be created under calculation rules node under tariff meta model, and this calculation rule then needs to be assigned to right class.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Creation of new calculation rule: <em>gi_Alpha1</em></p>
+</div>
+<div id="img-gi_Alpha1" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/gi_Alpha1.PNG" alt="gi Alpha1">
+</div>
+<div class="title">Figure 7. New calculation rule gi_Alpha1</div>
+</div>
+<div class="paragraph">
+<p>And then gi_Alpha1 will be assigned to general class.</p>
+</div>
+<div id="img-gi_Alpha2" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/gi_Alpha2.PNG" alt="gi Alpha2">
+</div>
+<div class="title">Figure 8. General class</div>
+</div>
+<div class="paragraph">
+<p>Only then user will be able to create this new calculation rule under general class tariff:</p>
+</div>
+<div id="img-gi_Alpha3" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/gi_Alpha3.PNG" alt="gi Alpha3">
+</div>
+<div class="title">Figure 9. Class _General</div>
+</div>
+<div class="paragraph">
+<p>Here is how calculation rule looks like:</p>
+</div>
+<div id="img-gi_Alpha4" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/gi_Alpha4.PNG" alt="gi Alpha4">
+</div>
+<div class="title">Figure 10. Calculation rule</div>
+</div>
+<div class="paragraph">
+<p>With F3 user will be able to see quickly what has not been assigned. If user tries to transport the tariffs user will run message status (File/Message File/Open) and there it will be identified which calculation rules have unassigned parts.</p>
+</div>
+<div class="paragraph">
+<p>Calculation rules can also use cross reference functionality in order to see where else this calculation rules are used:</p>
+</div>
+<div id="img-crossref" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/crossref.PNG" alt="crossref">
+</div>
+<div class="title">Figure 11. Cross references</div>
+</div>
+<div class="paragraph">
+<p>Test Case:</p>
+</div>
+<div class="paragraph">
+<p>If user wants to check calculation rule, it can use the functionality of test case. By selecting:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Enable detail pane of calculation rule</p>
+</li>
+<li>
+<p>Assign any unassigned tariff interface elements (can be searched for by pressing the F3 key).</p>
+</li>
+<li>
+<p>Menu item "Calculation rule &#8230;&#8203; Open test case".</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Each calculation rule automatically receives a linked (unnamed) test case from CPL.</p>
+</div>
+<div class="paragraph">
+<p>As soon as the tariff interface of the calculation rule is fully occupied, this test case is generated. It receives the following test commands:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><em>Loadproc &lt;Name of the current calculation rule&gt;</em></p>
+</li>
+<li>
+<p><em>Loadvartab &lt;name of the tables&gt; "&#8230;&#8203;"</em></p>
+</li>
+<li>
+<p><em>Set &lt;scalar stock management interface element&gt; =</em> (Here user will allocate the values of external interfaces)</p>
+</li>
+<li>
+<p><em>Execproc &lt;Name of the current calculation rule&gt;</em></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>by clicking start interpreter you will start this case:</p>
+</div>
+<div id="img-testcase" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/testcase.PNG" alt="testcase">
+</div>
+<div class="title">Figure 12. Test case</div>
+</div>
+<div class="paragraph">
+<p>With play, stop, step into and step over user can go through the step results of the calculation rule and in that way to analyse results specifically when the calculation rule is very complicated:</p>
+</div>
+<div id="img-runcase" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/runcase.PNG" alt="runcase">
+</div>
+<div class="title">Figure 13. Run case</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_interfaces">2.2.2. Interfaces</h4>
+<div class="paragraph">
+<p>Interfaces are variables which are always assigned with values or basic formulas when creating a calculation rule. Information on these assignments is contained further in the control data set of the calculation rule.<br>
+There are two types of interfaces:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Internal interfaces</p>
+</li>
+<li>
+<p>External interfaces. </p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Internal interface elements cannot be influenced by the application calling the subsystem.<br>
+However, values, formulas or other calculation rules are assigned to them. If there are unassigned tariff interface elements in a calculation rule, a test case cannot be created for this calculation rule, nor can it be transported to the application.<br>
+Such a calculation rule shall be considered incomplete.<br></p>
+</div>
+<div class="paragraph">
+<p>External interfaces are assigned with the data from integration layer of the main application. Examples of external interfaces are entry age or duration of the insurance. Each node Internal and External can be further structured with additional folders beneath them. They are not mandatory and can be used in flexible manner in terms of naming and structure.<br>
+There are as well table interfaces, they are used to make connection to the table in formulas definition.<br>
+Table elements will be explained later.</p>
+</div>
+<div id="img-interfaces001" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/interfaces001.PNG" alt="interfaces001">
+</div>
+<div class="title">Figure 14. Interfaces</div>
+</div>
+<div class="sect4">
+<h5 id="_creation_of_internal_interface">Creation of Internal Interface</h5>
+<div class="paragraph">
+<p>Right click on the internal node and choose new interface. It was mentioned before that the name of internal interface should start with <code>i_</code>.<br>
+Possible format results are matrix,date,scalar, vector. Decimal and pre decimal places can be defined, as well as whether this interface is assignable.</p>
+</div>
+<div id="img-creationtariff001" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/creationtariff001.jpg" alt="creationtariff001">
+</div>
+<div class="title">Figure 15. New | Interface</div>
+</div>
+<div id="img-creationtariff002" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/creationtariff002.jpg" alt="creationtariff002">
+</div>
+<div class="title">Figure 16. Interface properties</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_creation_of_external_interfaces">Creation of External Interfaces</h5>
+<div class="paragraph">
+<p>Usual structure of folders are, new values, old values and then further additional folders can be created beneath them like for tables interfaces for example. Table interfaces as previously explained are used for connection to the tables within CPL.</p>
+</div>
+<div id="img-creationinterface001" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/creationinterface001.PNG" alt="creationinterface001">
+</div>
+<div class="title">Figure 17. Interfaces</div>
+</div>
+<div class="paragraph">
+<p>Right click on the folder and choose new interface.</p>
+</div>
+<div id="img-creationinterface002" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/creationinterface002.jpg" alt="creationinterface002">
+</div>
+<div class="title">Figure 18. Application interface</div>
+</div>
+<div class="paragraph">
+<p>Like for internal interfaces, possible formats are date, scalar, matrix and vector.<br>
+It is recommended to start the name with e_. Decimal and pre decimal places can be defined, as well as whether this interface is assignable.</p>
+</div>
+<div id="img-creationinterface003" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/creationinterface003.jpg" alt="creationinterface003">
+</div>
+<div class="title">Figure 19. Interface properties</div>
+</div>
+<div class="paragraph">
+<p>It is possible to make cross reference to the interfaces, in that way user can see in which formulas or calculation rules those interfaces are used:</p>
+</div>
+<div id="img-crossrefinterface" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/crossrefinterface.PNG" alt="crossrefinterface">
+</div>
+<div class="title">Figure 20. Cross references</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_tariff_meta_model">2.2.3. Tariff Meta model</h4>
+<div class="paragraph">
+<p>The tariff Meta model serves to define the structure (the "database schema") of Tariff configuration in Calculus Prime Life data base.<br>
+Two components are mandatory to be defined: class definition and calculation rules definition which are then further assigned to possible calculation rule on the class level.</p>
+</div>
+<div id="img-tariffmetamodel001" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/tariffmetamodel001.jpg" alt="tariffmetamodel001">
+</div>
+<div class="title">Figure 21. Tariff Meta model</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_classes">2.2.4. Classes</h4>
+<div class="paragraph">
+<p>There is requirement in class’s hierarchy for Calculus Prime Life to be implemented with ABS database to have at least 5 classes. These can be for example <code>General</code>, <code>Mortality Tables</code>, <code>Tariff</code>, <code>Category</code> and <code>State</code> classes. Hierarchy must be done in the following way: Class <code>General</code> will have highest range with class <code>Mortality Tables</code> as sub class. <code>Tariff</code> will be sub class of <code>Mortality tables</code>.<br>
+And Category will be sub class of Tariff. <em>State</em> will be sub class of <em>Category</em>.</p>
+</div>
+<div id="img-classes001" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/classes001.jpg" alt="classes001">
+</div>
+<div class="title">Figure 22. Category</div>
+</div>
+<div class="paragraph">
+<p>Later on, the calculation rules will be assigned according to the proper class. This sort of knowledge of what calculation will belong to which class is usually situated within an actuary team.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_formulas">2.2.5. Formulas</h4>
+<div class="paragraph">
+<p>Formulas represent the smallest calculable unit in Calculus Prime Life. They contain a formula text that is written in the CDL language of Calculus Prime Life and refers to other formulae (static formula reference) and interface elements. +
+Each formula calculates exactly one result, which can be a scalar value, a vector or a matrix. Calculus Prime Life also generates C code for the formulas, which is then integrated into external application.<br>
+Formulas must be defined within at least 2 folders structures. This is mandatory configuration. +
+Formulas must have unique names. It is recommended for the name of the formula to start with <code>F_</code> .
+With right click on the proper folder you need to choose new formula:</p>
+</div>
+<div id="img-formulas002" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/formulas002.jpg" alt="formulas002">
+</div>
+<div class="title">Figure 23. New | Formula</div>
+</div>
+<div class="paragraph">
+<p>This is the mandatory structure:</p>
+</div>
+<div id="img-formulas001" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/formulas001.jpg" alt="formulas001">
+</div>
+<div class="title">Figure 24. Structure</div>
+</div>
+<div class="paragraph">
+<p>Typical formula will start with set res=&#8230;&#8203;.. The user can inform it self how to create certain formulas by looking into the help guide. Chapters like Hints and tips for formula development or overwriting interface elements and formula language of CPL(CDL Language).</p>
+</div>
+<div class="paragraph">
+<p>Formulas have to be compiled.</p>
+</div>
+<div class="paragraph">
+<p>During this process, the system checks whether the formulae are syntactically correct, whether the names of interface elements and (statically referenced) formulae used in them exist in the calculation module, and whether their Result format is compatible with the use in the formula.</p>
+</div>
+<div class="paragraph">
+<p>Defective formulae are not available for the program generator and are thus not taken into account when the subsystem is created.</p>
+</div>
+<div id="img-compile" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/compile.PNG" alt="compile">
+</div>
+<div class="title">Figure 25. Compile</div>
+</div>
+<div class="paragraph">
+<p>After the process has been finished if the message window has been turned on, user will see the status. As well this will be shown in message file (File/message file/open)</p>
+</div>
+<div id="img-message" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/message.PNG" alt="message">
+</div>
+<div class="title">Figure 26. Messages</div>
+</div>
+<div class="paragraph">
+<p>Cross reference will be as well used for formulas in that way user can see where this particular formula is used (in which other formula or calculation rule):</p>
+</div>
+<div id="img-crossrefformula" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/crossrefformula.PNG" alt="crossrefformula">
+</div>
+<div class="title">Figure 27. Cross reference to formula</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_tables_and_table_meta_models">2.2.6. Tables and Table meta models</h4>
+<div class="paragraph">
+<p>Tables are very important element of calculus prime life as they are typically there to represent mortality data or cost information. :<br>
+Note: Folders under which the tables are stored needs to be called the same as tariffs where these tables are going to be used.<br>
+Table will be defined with column and raw number and its usage to a corresponding tariff will be defined in ABS database.</p>
+</div>
+<div id="img-tablemeta002" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/tablemeta002.jpg" alt="tablemeta002">
+</div>
+<div class="title">Figure 28. Tables</div>
+</div>
+<div id="img-tablemeta003" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/tablemeta003.jpg" alt="tablemeta003">
+</div>
+<div class="title">Figure 29. Table volumes</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_interfaces_as_connection_to_tables">2.2.7. Interfaces as connection to tables</h4>
+<div class="paragraph">
+<p>External interfaces can used with the help of Formulas as connection to tables like cost tables for example which helps in additional data storage for calculation logic. Apart from cost info some other data holders can be as well saved within tables and with the help of external interfaces they can fetched to calculation rules. For example code _Accrual uses first column in Cost Tab table.</p>
+</div>
+<div id="img-interfaceformula001" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/interfaceformula001.jpg" alt="interfaceformula001">
+</div>
+<div class="title">Figure 30. Codes</div>
+</div>
+<div id="img-interfaceformula002" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/interfaceformula002.jpg" alt="interfaceformula002">
+</div>
+<div class="title">Figure 31. Formula text with reference to column 1</div>
+</div>
+<div id="img-interfaceformula003" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/interfaceformula003.jpg" alt="interfaceformula003">
+</div>
+<div class="title">Figure 32. Table column 1</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_calculus_prime_life_and_its_connection_to_abs_data_base">2.3. Calculus Prime Life and its connection to abs data base</h3>
+<div class="paragraph">
+<p>There are multiple rules that need to be considered for integrating CPL into ABS data base. We will only focus on basic ones.<br>
+Naming of Tariffs in Configuration Suite in PEX.<br>
+Name of the tariffs should be the same as the calculation rules in Calculus Prime Life with tariff class group.</p>
+</div>
+<div id="img-database001" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/database001.jpg" alt="database001">
+</div>
+<div class="title">Figure 33. Templates in PEX</div>
+</div>
+<div class="paragraph">
+<p>Definition of the mortality and other tables:<br>
+This is done on the tariff level below the product component on LifeRate</p>
+</div>
+<div class="paragraph">
+<p>Description:</p>
+</div>
+<div id="img-database002" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/database002.jpg" alt="database002">
+</div>
+<div class="title">Figure 34. Tables in PEX</div>
+</div>
+<div id="img-database003" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/database003.jpg" alt="database003">
+</div>
+<div class="title">Figure 35. Class groups in CPL</div>
+</div>
+<div class="paragraph">
+<p>Definition of calculation rules:
+All calculation rules that belong to that tariff class T12345 will be defined taking into the consideration of folders names and category matching.
+The entries in this table are created by a batch module.<br>
+There  is mapping list of the calculation rule and its abbreviation/domain value in the integration layer and ABS data model. Domain values LTARBESCHRBEZEICHN from table TLTARBESCHR are mapped to the respective calculation rules.
+The syntax is "description" tabulator "Name of the calculation rule" tabulator "Domain value"
+There must be an empty row at the end of the file.</p>
+</div>
+<div id="img-database004" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/database004.jpg" alt="database004">
+</div>
+<div class="title">Figure 36. _T12345/_PE/_ppf/p_premiumSplit in PEX</div>
+</div>
+<div id="img-database005" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/database005.jpg" alt="database005">
+</div>
+<div class="title">Figure 37. _T12345/_PE/_ppf/p_premiumSplit in CPL</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_setup_of_macro_definition_and_c_generator_incalculus_prime_life">3. Setup of macro definition and C-generator in Calculus Prime Life</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>User settings</strong><br>
+The User settings are found in the menu "Extras→Options". They contain two options "Settings" and "Directories"</p>
+</div>
+<div class="paragraph">
+<p><strong>Settings</strong><br>
+The options "Generate file names with lowercase letters" and "Compile formulas incrementally" should be checked.
+The other checkboxes can be selected if the provided feature is helpful.</p>
+</div>
+<div id="img-setupmacro001" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/setupmacro001.jpg" alt="setupmacro001">
+</div>
+<div class="title">Figure 38. User settings</div>
+</div>
+<div class="paragraph">
+<p><strong>Macro Definition</strong><br>
+The Macro definitions are used for the transport and creation of the deployable.
+The Macro Management is reached in the menu/File/Macro Management.</p>
+</div>
+<div id="img-setupmacro002" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/setupmacro002.jpg" alt="setupmacro002">
+</div>
+<div class="title">Figure 39. Menu</div>
+</div>
+<div id="img-setupmacro003" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/setupmacro003.jpg" alt="setupmacro003">
+</div>
+<div class="title">Figure 40. Macro management</div>
+</div>
+<div id="img-setupmacro004" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/setupmacro004.jpg" alt="setupmacro004">
+</div>
+<div class="title">Figure 41. Macro management</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_useful_naming_convention">4. Useful naming convention</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>It is useful to have some sort of naming convention in mind before setting up a new calculation module.
+The following is an example for a naming convention:<br>
+PreFix F_ is used for formulas, e.g. F_EntryAge for the formula of the entry age.<br>
+PreFix i_ is used for internal parameters, e.g. i_date for the internal parameter date.<br>
+PreFix e_ is used for external parameters, e.g. e_birthdate for the external parameter birthdate.<br>
+Calculation rules
+For Calculation rules the use of different PreFix per type of calculation rule (yield, reserve, premium,&#8230;&#8203;) and the separation internal and external calculation rule is quite useful.
+E.g. qi_ and q_ for query internal and query external.<br>
+The endings "_o" and "_n" represent calculation rules which calculate old or new values.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_calculus_prime_life_version_check">5. Calculus Prime Life Version Check</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>One important rule in modelling the tariffs in Calculus Prime Life is the version check, which is implemented in the base classes of the integration layer.<br>
+The version check is done by calling two specific calculation rules by name.
+So these names must be identical in every calculation module, which is set up.</p>
+</div>
+<div class="paragraph">
+<p>The names are "ai_Version_FM" and "ai_Version_TM".</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_deployment_process_out_of_calculus_prime_life">6. Deployment process out of Calculus Prime Life</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Calculus Prime Life generates the formulas as C-files and the calculation rules as flat files (with a proprietary format).
+The creation of the deployable for the integration in ABS consists of several steps.</p>
+</div>
+<div class="paragraph">
+<p>In general there should be an own folder where the generated output is going to be stored.<br>
+Then it is easier to handle the process and it is easier to maintain the needed files.<br>
+In this description we assume that the folder is c:\dev\TCDDB\Generate - of course it is possible to use different folder names.<br>
+The structure within the "Generate" should be always the same.</p>
+</div>
+<div class="paragraph">
+<p>These steps are listed and described below, also the setup of our scripts when you use them the first time.</p>
+</div>
+<div class="paragraph">
+<p>Compile all formulas.<br>
+This step is optional, but suggested if the user is unsure if references in the formulas were changed.<br>
+Typically all formulas are compiled when saved, but when reference are changed the affected formulas are not compiled by default.<br>
+To compile all formulas (only the outdated ones will be compiled) select the node "Formulas" and open with a right click the context menu.<br>
+Select there "Compile" - the results &amp; error are displayed, as always in Calculus Prime Life, in the message window.</p>
+</div>
+<div id="img-deployment001" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/deployment001.jpg" alt="deployment001">
+</div>
+<div class="title">Figure 42. Compile</div>
+</div>
+<div class="paragraph">
+<p>Generate all formulas<br>
+This step extracts the compiled formulas out of the database and is mandatory when formulas were changed.<br>
+Experienced Calculus Prime Life Users know when it is required to export the formulas.<br>
+In a multiuser environment it is saver to generate the formulas all the time!</p>
+</div>
+<div class="paragraph">
+<p>Select in the file menu the option "Generate" as shown in the screenshot below. It is completely independent of the nodes you have selected in the navigation tree of Calculus Prime Life.</p>
+</div>
+<div id="img-deployment002" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/deployment002.jpg" alt="deployment002">
+</div>
+<div class="title">Figure 43. Generator | Generate</div>
+</div>
+<div class="paragraph">
+<p>Afterwards the following PopUp will occur - the checkboxes should be ticked as shown below.</p>
+</div>
+<div id="img-deployment003" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/deployment003.jpg" alt="deployment003">
+</div>
+<div class="title">Figure 44. Generator</div>
+</div>
+<div class="paragraph">
+<p>After clicking "Start" the progress is shown in the messages window. 
+As a result all formulas and the Calculus Prime Life internal control layer are created and stored in the data folder of the respective calculation module.
+This path is different depending on the calculation module. 
+A typical structure looks like the following - DB represents the top node of the database path:
+-) DB\C3E9 &#8658; this contains the c88.c - c100.c files, these are the control layer files from the Calculus Prime Life interpreter
+-) DB\R3FE\C\C3E9 &#8658; this folder contains the specific C-files from the respective calculation module.
+The subfolder R3FE is different depending on the calculation module but it always starts with the letter R.</p>
+</div>
+<div class="paragraph">
+<p>The scripts below will fetch the data from these folders if setup correctly!</p>
+</div>
+<div class="paragraph">
+<p>Completeness check<br>
+After all formulas are compiled successfully the calculation rules can be checked if they are complete. This meaning they can be transported since all internal parameters have values.<br>
+Typically in generic calculation module not all calculation rules must be complete - that´s why we distinguish between internal and external calculation rules, see above in the section "naming convention".</p>
+</div>
+<div class="paragraph">
+<p>Go to the file menu and select "Completeness Check" - the result is saved in the message file.<br>
+This must be checked manually by the user. The user is responsible for that check.<br>
+If the following steps are done and not all required calculation rules are complete they are simply missing in the transported files!</p>
+</div>
+<div id="img-deployment004" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/deployment004.jpg" alt="deployment004">
+</div>
+<div class="title">Figure 45. Completeness check</div>
+</div>
+<div class="paragraph">
+<p>Selection for local application<br>
+The next step is to create two control files in the folder in which the deployables are generated.<br>
+The sequence is not relevant. It must be done for the tables and Tariffs.
+Select Tables and then right click and choose "Selection for local application", afterwards the file anwcom.txt must be renamed to tabexl.txt</p>
+</div>
+<div id="img-deployment005" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/deployment005.jpg" alt="deployment005">
+</div>
+<div class="title">Figure 46. Menu</div>
+</div>
+<div class="paragraph">
+<p>Then do the same for the tariffs, afterwards the file anwcom.txt must be renamed to prcexl.txt.</p>
+</div>
+<div class="paragraph">
+<p><strong>Transport of tables and tariffs</strong></p>
+</div>
+<div class="paragraph">
+<p>Then the transport of the tables and tariffs can be processed.
+This is done by selecting again alternately the table and tariffs node. In the context menu choose <em>Transport</em>.</p>
+</div>
+<div id="img-deployment006" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/deployment006.jpg" alt="deployment006">
+</div>
+<div class="title">Figure 47. Transport</div>
+</div>
+<div class="paragraph">
+<p>Afterwards the target folder and a name for the export must be entered
+Use for tables tab.ttr and for tariffs prc.ttr</p>
+</div>
+<div id="img-deployment007" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/deployment007.jpg" alt="deployment007">
+</div>
+<div class="title">Figure 48. Transport file</div>
+</div>
+<div class="paragraph">
+<p>For Tariffs the setting is as follows:</p>
+</div>
+<div id="img-deployment008" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/deployment008.jpg" alt="deployment008">
+</div>
+<div class="title">Figure 49. Rate transport</div>
+</div>
+<div class="paragraph">
+<p>The option "Rebuild all transport formats (no actuality check)" needs to be used carefully since this might take several hours depending on the size of the calculation module!</p>
+</div>
+<div class="paragraph">
+<p>Setup and Run the generate - script</p>
+</div>
+<div class="paragraph">
+<p>1) setup generate script
+in generate.cmd the paths must be set according to the respective setup of folders.<br>
+The first path is the one where the C - Controlfiles are located, typically &#8230;&#8203;.db\C3E9\ (e.g. C:\dev\TCD_DB\template\db\C3E9\)
+The second path is the target folder
+The third path is the folder where the C-formulas are located, typically &#8230;&#8203;db\R3FE\C\C3E9 (e.g. C:\dev\TCD_DB\template\db\R3FE\C\C3E9)
+R3FE is the name of the calculation module and therefore depending on the respective calculation module.</p>
+</div>
+<div class="paragraph">
+<p>2)further configuration files<br>
+ltbeschr.txt
+This is mapping list of the calculation rule and its abbreviation/domain value in the integration layer and ABS data model. Domain values LTARBESCHRBEZEICHN from table TLTARBESCHR are mapped to the respective calculation rules.
+The syntax is "description" tabulator "Name of the calculation rule" tabulator "Domain value"
+There must be an empty row at the end of the file.
+ATTENTION: new calculation rules need to be added here</p>
+</div>
+<div class="paragraph">
+<p>rigru.txt
+This file contains the riskgroup mapping - meaning the mapping from the calculation module to ABS data model<br>
+stdtdef.txt
+This list contains the mapping of the calculation rules and tables to the respective file endings (4 file endings are allowed)
+ATTENTION: new calculation rules need to be added here<br>
+tarife.txt
+This file contains the list of tariffs which should be generated
+ATTENTION: new tariffs needs to be added here<br>
+zustand.txt
+This file contains the mapping for the states in Calculus Prime Life and the ABS data model. LTARZUSTAND domain values from the table TLTARBESCHR will be mapped to State classes in Calculus Prime Life These values will be further used in Integration layer.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_integration_of_calculus_prime_life_artefacts">7. Integration of Calculus Prime Life artefacts</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The artefacts created in the above chapter are handed over to the IT. 
+ C/C Files
+The IT has to integrate the C/C files in their MOM - project, see the example screenshot</p>
+</div>
+<div id="img-integration001" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/integration001.jpg" alt="integration001">
+</div>
+<div class="title">Figure 50. Project structure</div>
+</div>
+<div class="paragraph">
+<p>The C88 - C100.h &amp; .c are the files which contain the control language of CP Life. They are always the same throughout each and every calculation module.
+The files lifet148.h &amp; .c are the calculation module specific files and their name is put together based on the calculation module name - but restricted to 8 characters.
+The restriction was necessary for the old mainframes environment, nowadays this could be skipped but we don´t recommend it.<br>
+Keep the files to lower case and limited to 8 characters!<br>
+ 
+control files
+ 
+The control files are containing the actual calculations per tariff. For each tariff 4 files are created (with the file endings PRA, PRB, PRC and PRD), the only exception is the file with the table data, this is only one.
+The search algorithm built in the framework expects to find 4 files. Therefore the files are created with length 0 if empty. 
+Additionally the files are put into a zip archive (this is also mandatory by default) and the IT checks in the zip file because this is going to be the deployable besides the dll/shared object.<br>
+The zip file and the dll/shared object must  be within the same plugin.</p>
+</div>
+<div class="paragraph">
+<p>load.dat</p>
+</div>
+<div class="paragraph">
+<p>The third artefact is the file load.dat, that contains basically the same information as the control files but within one huge file.
+From consistency point of view the load.dat should also be checked in by the IT.
+It is the base file for the batch module which loads the tariff information in the table TLTARBESCHR and TSTEUERDATEN.
+TLTARBESCHR is associate to TVERSTARIF and based on the name of the tariff in TVERSTARIF the respective control files are searched and interpreted.
+The screenshot shows the relationship of CP Life calculation rules and TLTARBESCHR:</p>
+</div>
+<div id="img-integration002" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/integration002.jpg" alt="integration002">
+</div>
+<div class="title">Figure 51. CP Life calculation rules and TLTARBESCHR</div>
+</div>
+<div class="paragraph">
+<p>So the path within CP Life is stored as program-name and also result type (scalar, vector or matrix) are stored in TLTARBESCHR. Each entry gets also a domain value for unique identification (domain triggers could be turned off)</p>
+</div>
+<div class="paragraph">
+<p>TSTEUERDATEN is used only in batch and only if one uses still the embedded approach instead of RSS. 
+The content of this table is a 1:1 replacement of the control files which are copied in each and every ABS installation. 
+If the entries are needed depends on the rating setup. If only RSS is in use the table is not necessary. If in batch still the embedded (meaning the compiled and linked one) rating is used then the table is mandatory.</p>
+</div>
+<div id="img-integration003" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/integration003.jpg" alt="integration003">
+</div>
+<div class="title">Figure 52. CP Life calculation rules and TLTARBESCHR</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_integration_of_cpl_generated_c_code_into_mom">8. Integration of CPL generated C code into MOM</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When the calculation paths/options are all implemented in the integration layer/MOM there are basically two major ongoing adaptions in the integration layer with a new calculation module version necessary.
+As mentioned this applies only if all necessary calculation paths/options are already implemented and it doesn´t mean that new calcualtion paths have to implemented later on.
+But in the "normal" process the enhancements in the integration layer can be reduced to the following two modifications.</p>
+</div>
+<div class="paragraph">
+<p>new external parameter
+New external parameters are defined in CP Life and can be used then in formulas and/or calculation rules.</p>
+</div>
+<div id="img-integration004" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/integration004.jpg" alt="integration004">
+</div>
+<div class="title">Figure 53. CP Life calculation rules and TLTARBESCHR</div>
+</div>
+<div class="paragraph">
+<p>They can be defined in CP Life and as long as they are not used there is no need to enhance the integration layer.
+But as soon as they are referred to in a formula or calcuation rule there must be    an implementation for this parameter in the integration layer.<br>
+The created C- files contain a header file which provide the definition of the respective external parameter, this is basically an enumeration. The name of the header file depends on the name of the calculation module, in our template it is lifetem6.h (it is always something like &#8230;&#8203;6.h)
+This header has the following defines:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code data-lang="cpp" class="language-cpp hljs">#define e_n_n_SKIX
+#define e_m_n_SKIX
+#define e_TBeg_n_SKIX
+#define e_tarif_nr_n_SKIX
+#define e_tarsumme_ges_n_SKIX
+#define e_tarsumme_pfr_n_SKIX
+#define e_m_o_SKIX
+#define e_n_o_SKIX
+#define e_tarif_nr_o_SKIX
+#define e_TBeg_o_SKIX</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>These defines are referred to in the specific implementation. So when we look at e_n_n_SKIX (SKIX = scalar index) and e_n_o_SKIX they are representing the insurance period of the current application ("NEW") and the original contract ("OLD").
+The respective class is in our template "InsuranceDuration" and when we look at the declaration we see that these two parameters are registered there:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code data-lang="cpp" class="language-cpp hljs">// Declaration of InsuranceDuration
+DECL_ATTR_NAME(InsuranceDuration)
+DECL_ATTR_NAME(InsuranceDurationField)
+typedef GenericTarifAttribute&lt;ksInsuranceDuration, ksInsuranceDurationField, e_n_n_SKIX, e_n_o_SKIX&gt; InsuranceDurationBase;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The position of the parameter in the template is essential! The first parameter (independent of the name of course) is interpreted as current parameter and the second one is always used as orginial parameter.
+So take care when registring the parameters!<br>
+For joint life tariffs it is necessary to have two insured persons on one tariff. Thats why it is possible to register 4 CP Life parameters for one class. 
+Typically the separation is only needed for person related attributes, see the example.</p>
+</div>
+<div class="paragraph">
+<p>The position of the parameter in the template is essential! The first parameter (independent of the name of course) is interpreted as current parameter and the second one is always used as orginial parameter.
+So take care when registring the parameters!<br>
+For joint life tariffs it is necessary to have two insured persons on one tariff. Thats why it is possible to register 4 CP Life parameters for one class. 
+Typically the separation is only needed for person related attributes, see the example.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code data-lang="cpp" class="language-cpp hljs">// Declaration of DateOfBirth
+DECL_ATTR_NAME(DateOfBirth)
+DECL_ATTR_NAME(DateOfBirthField)
+typedef GenericTarifAttribute&lt;ksDateOfBirth, ksDateOfBirthField, e_BirthDate_IP1_n_SKIX, e_BirthDate_IP1_o_SKIX, e_BirthDate_IP2_n_SKIX, e_BirthDate_IP2_o_SKIX, Date, false, e_Old&gt; DateOfBirthBase;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In this case the parameters for the second person are set with -1 and -1 but these are the placeholders for parameters of the second insured person.
+More than two insured persons for a joint life are not supported! This means that 2 insured persons in one tariff are the maximum. But it is possible to have several tariffs with in one contract!<br>
+Of course for the new external parameter the respective implementation is necessary!
+This means it must be implemented how the parameter is derived (from an attribute in ABS, calculation of an additional calculation rule or calculation within MOM).</p>
+</div>
+<div class="paragraph">
+<p>New calculation rule</p>
+</div>
+<div class="paragraph">
+<p>New calculation rules require more configuraiton than new external parameters!
+A new calculation rule must be registered first of all in configuration files for the control file creation, these are ltbeschr.txt and stdtdef.txt.
+In ltbeschr.txt the mapping of the &lt;TLTARBESCHR&gt;.&lt;LTARBEZ&gt; and the calculation rule name is done:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code data-lang="plaintext" class="language-plaintext hljs">RiskGroup    p_RiskGroup    RISGR
+PremiumAge   p_PremiumAge   PRA</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The domain values RISGR and PRA are found in the table TLTARBESCHR and in the source code.</p>
+</div>
+<div id="img-enhancement001" class="imageblock">
+<div class="content">
+<img src="./03_calculus_prime_life/media/enhancement001.jpg" alt="enhancement001">
+</div>
+<div class="title">Figure 54. CP Life calculation rules and TLTARBESCHR</div>
+</div>
+<div class="paragraph">
+<p>Sourcecode
+If you search for RIPRE ("match case" and "match whole word" checked) in the MOM-template 2 results are found:</p>
+</div>
+<div class="paragraph">
+<p>The first one is the dependency structure and the second one the concrete implementation.
+Each new calculation rule domain value must be registered in the dependency structure otherwise an error occurs when the call for this new value is tried.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code data-lang="plaintext" class="language-plaintext hljs">TCD::DependenciesMap BaseContext::s_TLTarBeschrDependencies =
+{
+	{ "RIPRE",{ { RATE_STATE_ID } } },
+};</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The implementation of CP Life call distinguishes basically two options - mandatory or optional calculation rule.
+If a mandatory calculation rule is not found in TLTARBESCHR and exception is thrown.
+If an optional calculation rule is not found the result is simply 0.
+Example for a mandatory calculation rule:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code data-lang="plaintext" class="language-plaintext hljs">if (GetContext()-&gt;RunCalculationRule("RIPRE", LTB_CATEGORY_PREMIUM, value) == LTB_TYPE_MISSING) {
+		THROW(DbInconsistency(818, "RIPRE"));
+	}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Example for an optional calculation rule:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code data-lang="plaintext" class="language-plaintext hljs">GetContext()-&gt;RunCalculationRule("RIPRE", LTB_CATEGORY_PREMIUM, value);</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2021-10-06 08:25:28 +0200
+</div>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+<script>hljs.initHighlighting()</script>
+</body>
+</html>

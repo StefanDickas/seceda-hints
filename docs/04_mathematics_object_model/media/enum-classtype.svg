@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="366.6667px" preserveAspectRatio="none" style="width:218px;height:366px;" version="1.1" viewBox="0 0 218 366" width="218.75px" zoomAndPan="magnify"><defs><filter height="300%" id="fevt69f2yr1c0" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="4.166666666666667"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="8.333333333333334" dy="8.333333333333334" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[746e72323d8c180b82d29dfe63d5e2bb]
+class Ilk--><rect fill="#00FFFF" filter="url(#fevt69f2yr1c0)" height="330.599" id="Ilk" style="stroke: #A80036; stroke-width: 3.125;" width="181.25" x="14.5833" y="14.5833"/><ellipse cx="86.1458" cy="47.9167" fill="#EB937F" rx="22.9167" ry="22.9167" style="stroke: #A80036; stroke-width: 2.0833333333333335;"/><path d="M83.7695,49.5768 L83.7695,54.7852 L92.7865,54.7852 L92.7865,52.8646 Q92.7865,51.5951 93.2747,51.0417 Q93.7956,50.4883 94.5768,50.4883 Q95.3581,50.4883 95.8464,51.0417 Q96.3346,51.5951 96.3346,52.8646 L96.3346,58.3333 L79.668,58.3333 Q78.3659,58.3333 77.8125,57.8451 Q77.2917,57.3568 77.2917,56.543 Q77.2917,55.7617 77.8451,55.2734 Q78.3984,54.7852 79.668,54.7852 L80.2214,54.7852 L80.2214,40.918 L79.668,40.918 Q78.3659,40.918 77.8125,40.4297 Q77.2917,39.9414 77.2917,39.1276 Q77.2917,38.3464 77.8125,37.8581 Q78.3659,37.3698 79.668,37.3698 L95.5534,37.3698 L95.5534,42.7734 Q95.5534,44.043 95.0651,44.5964 Q94.6094,45.1172 93.7956,45.1172 Q93.0143,45.1172 92.526,44.5964 Q92.0378,44.043 92.0378,42.7734 L92.0378,40.918 L83.7695,40.918 L83.7695,46.0286 L86.862,46.0286 Q86.862,44.6615 87.1224,44.2708 Q87.6758,43.4245 88.6523,43.4245 Q89.4336,43.4245 89.9219,43.9779 Q90.4102,44.4987 90.4102,45.7682 L90.4102,49.8698 Q90.4102,51.0091 90.1497,51.3997 Q89.5964,52.2135 88.6523,52.2135 Q87.6758,52.2135 87.1224,51.3672 Q86.862,50.9766 86.862,49.5768 L83.7695,49.5768 Z "/><text fill="#000000" font-family="sans-serif" font-size="25" lengthAdjust="spacingAndGlyphs" textLength="25" x="124.2708" y="58.1462">Ilk</text><line style="stroke: #A80036; stroke-width: 3.125;" x1="16.6667" x2="193.75" y1="81.25" y2="81.25"/><text fill="#000000" font-family="sans-serif" font-size="22.9167" lengthAdjust="spacingAndGlyphs" textLength="106.25" x="27.0833" y="113.3728">e_Number</text><text fill="#000000" font-family="sans-serif" font-size="22.9167" lengthAdjust="spacingAndGlyphs" textLength="72.9167" x="27.0833" y="142.1977">e_Date</text><text fill="#000000" font-family="sans-serif" font-size="22.9167" lengthAdjust="spacingAndGlyphs" textLength="70.8333" x="27.0833" y="171.0225">e_Text</text><text fill="#000000" font-family="sans-serif" font-size="22.9167" lengthAdjust="spacingAndGlyphs" textLength="156.25" x="27.0833" y="199.8474">e_DDMM_Date</text><text fill="#000000" font-family="sans-serif" font-size="22.9167" lengthAdjust="spacingAndGlyphs" textLength="91.6667" x="27.0833" y="228.6723">e_Vector</text><text fill="#000000" font-family="sans-serif" font-size="22.9167" lengthAdjust="spacingAndGlyphs" textLength="87.5" x="27.0833" y="257.4972">e_PerMil</text><text fill="#000000" font-family="sans-serif" font-size="22.9167" lengthAdjust="spacingAndGlyphs" textLength="104.1667" x="27.0833" y="286.322">e_Percent</text><text fill="#000000" font-family="sans-serif" font-size="22.9167" lengthAdjust="spacingAndGlyphs" textLength="70.8333" x="27.0833" y="315.1469">e_Jahr</text><line style="stroke: #A80036; stroke-width: 3.125;" x1="16.6667" x2="193.75" y1="328.5156" y2="328.5156"/><!--MD5=[d31a723bddc38474b5bab1f7b1ce6dea]
+@startuml
+skinparam dpi 200
+
+
+enum Ilk #aqua {
+  e_Number
+  e_Date
+  e_Text
+  e_DDMM_Date
+  e_Vector
+  e_PerMil
+  e_Percent
+  e_Jahr
+}
+
+@enduml
+
+PlantUML version 1.2020.09(Sun May 10 12:51:06 CEST 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 12.0.1+12
+Operating System: Windows 10
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

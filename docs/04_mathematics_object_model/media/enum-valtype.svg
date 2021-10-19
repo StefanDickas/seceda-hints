@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="281.25px" preserveAspectRatio="none" style="width:268px;height:281px;" version="1.1" viewBox="0 0 268 281" width="268.75px" zoomAndPan="magnify"><defs><filter height="300%" id="f1msmbs3ytcjki" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="4.166666666666667"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="8.333333333333334" dy="8.333333333333334" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[c14b294716fa9afb4a6cd474c2e85a60]
+class ValType--><rect fill="#FEFECE" filter="url(#f1msmbs3ytcjki)" height="244.1243" id="ValType" style="stroke: #A80036; stroke-width: 3.125;" width="231.25" x="14.5833" y="14.5833"/><ellipse cx="77.7083" cy="47.9167" fill="#EB937F" rx="22.9167" ry="22.9167" style="stroke: #A80036; stroke-width: 2.0833333333333335;"/><path d="M75.332,49.5768 L75.332,54.7852 L84.349,54.7852 L84.349,52.8646 Q84.349,51.5951 84.8372,51.0417 Q85.3581,50.4883 86.1393,50.4883 Q86.9206,50.4883 87.4089,51.0417 Q87.8971,51.5951 87.8971,52.8646 L87.8971,58.3333 L71.2305,58.3333 Q69.9284,58.3333 69.375,57.8451 Q68.8542,57.3568 68.8542,56.543 Q68.8542,55.7617 69.4076,55.2734 Q69.9609,54.7852 71.2305,54.7852 L71.7839,54.7852 L71.7839,40.918 L71.2305,40.918 Q69.9284,40.918 69.375,40.4297 Q68.8542,39.9414 68.8542,39.1276 Q68.8542,38.3464 69.375,37.8581 Q69.9284,37.3698 71.2305,37.3698 L87.1159,37.3698 L87.1159,42.7734 Q87.1159,44.043 86.6276,44.5964 Q86.1719,45.1172 85.3581,45.1172 Q84.5768,45.1172 84.0885,44.5964 Q83.6003,44.043 83.6003,42.7734 L83.6003,40.918 L75.332,40.918 L75.332,46.0286 L78.4245,46.0286 Q78.4245,44.6615 78.6849,44.2708 Q79.2383,43.4245 80.2148,43.4245 Q80.9961,43.4245 81.4844,43.9779 Q81.9727,44.4987 81.9727,45.7682 L81.9727,49.8698 Q81.9727,51.0091 81.7122,51.3997 Q81.1589,52.2135 80.2148,52.2135 Q79.2383,52.2135 78.6849,51.3672 Q78.4245,50.9766 78.4245,49.5768 L75.332,49.5768 Z "/><text fill="#000000" font-family="sans-serif" font-size="25" lengthAdjust="spacingAndGlyphs" textLength="93.75" x="113.9583" y="58.1462">ValType</text><line style="stroke: #A80036; stroke-width: 3.125;" x1="16.6667" x2="243.75" y1="81.25" y2="81.25"/><text fill="#000000" font-family="sans-serif" font-size="22.9167" lengthAdjust="spacingAndGlyphs" textLength="164.5833" x="27.0833" y="113.3728">e_CurrentValue,</text><text fill="#000000" font-family="sans-serif" font-size="22.9167" lengthAdjust="spacingAndGlyphs" textLength="122.9167" x="27.0833" y="142.1977">e_OldValue,</text><text fill="#000000" font-family="sans-serif" font-size="22.9167" lengthAdjust="spacingAndGlyphs" textLength="137.5" x="27.0833" y="171.0225">e_InputValue,</text><text fill="#000000" font-family="sans-serif" font-size="22.9167" lengthAdjust="spacingAndGlyphs" textLength="177.0833" x="27.0833" y="199.8474">e_PreviousValue,</text><text fill="#000000" font-family="sans-serif" font-size="22.9167" lengthAdjust="spacingAndGlyphs" textLength="206.25" x="27.0833" y="228.6723">e_PreviousOldValue</text><line style="stroke: #A80036; stroke-width: 3.125;" x1="16.6667" x2="243.75" y1="242.041" y2="242.041"/><!--MD5=[302ffe7119c1cfae82d8887b7e17054f]
+@startuml
+skinparam dpi 200
+
+
+enum ValType {
+ e_CurrentValue,
+ e_OldValue,
+ e_InputValue,
+ e_PreviousValue,
+ e_PreviousOldValue
+}
+
+@enduml
+
+PlantUML version 1.2020.09(Sun May 10 12:51:06 CEST 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 12.0.1+12
+Operating System: Windows 10
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
