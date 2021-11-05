@@ -1,0 +1,14 @@
+CREATE USER stefandickas WITH IN GROUP syncier_actuaries PASSWORD 'o3qfV2O2HEL8lPEZ';
+
+
+Credentials:
+
+
+Server:         psql-abscpl-dev-frc1-1.postgres.database.azure.com
+Port:           5432
+Database:       cpl
+Technical User: stefandickas@psql-abscpl-dev-frc1-1
+Password:       o3qfV2O2HEL8lPEZ
+Schema:         flh   | athora  | lifetemplate
+SSL Mode:       Require
+Trust Server Certificate: true
