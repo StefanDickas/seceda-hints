@@ -151,3 +151,13 @@ settings": [{
 
 
 jdbc:db2://sbx-frc1-db2core1.syncier.com:50000/DTSYN01:sslConnection=false;currentFunctionPath=BABS,ABS,SYSFUN;"
+
+========================================================================================
+
+in lifetem2.h und lifetem6.h mpüssen die defines für die Anzahlen manuell eingefügt werden.
+
+#define ANZSKALAR 90
+#define ANZTAB1 0
+#define ANZTAB2 6
+#define ANZDATUM 0
+#define ANZVERGL 0
