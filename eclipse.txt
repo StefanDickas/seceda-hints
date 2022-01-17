@@ -1,0 +1,79 @@
+1) Makfiles von der Kommandozeile ausführen
+
+cmake -G"Eclipse CDT4 - Unix Makefiles" -D CMAKE_BUILD_TYPE=Debug -DABS_SDK_ROOT_PATH=C:/dev/allianz/abs-sdk-debug/ -DABS_SDK_VERSION=21.0.305.35 -DCPP_DEVKIT_ROOT_PATH=c:/dev/allianz/cpp_devkit_debug/ -DCMAKE_INSTALL_PREFIX=c:/dev/allianz/math_life_seceda ../ABS_MATHLIFE/
+oder
+cmake -G "Visual Studio 15 2017 Win64" -D CMAKE_BUILD_TYPE=Debug -DABS_SDK_ROOT_PATH=C:/dev/allianz/abs-sdk-debug/ -DABS_SDK_VERSION=21.0.305.35 -DCPP_DEVKIT_ROOT_PATH=c:/dev/allianz/cpp_devkit_debug/ -DCMAKE_INSTALL_PREFIX=c:/dev/allianz/math_life_seceda ../ABS_MATHLIFE/
+
+anschließendimportieren als generelles existierendes project
+
+oder 
+
+2)  mit dem plugin cmake4eclipse:
+
+Das Projekt anlegen mit File->New -> Project .. nicht mit File -> New -> C/C++ Project 
+
+CMAKE Defines in den Properties des Projektes in C/C++ Build-> Cmake4eclipse eintragen: 
+ABS_SDK_ROOT_PATH        C:/dev/allianz/abs-sdk-debug/
+ABS_SDK_VERSION          21.0.305.35
+CPP_DEVKIT_ROOT_PATH     c:/dev/allianz/cpp_devkit_debug/
+CMAKE_MAKE_PROGRAM       nmake
+MSVC_RUNTIME_LIBRARY STRING MultiThreadedDebugDLL
+MSVC BOOL true
+CMAKE_CL_64              true
+CMAKE_HOST_WIN32         true
+MSVC_VERSION   1930-1939 = VS 17.0 (v143 toolset)
+WIN32 true
+
+
+CMAKE_C_COMPILER = C:/Strawberry/c/bin/gcc
+
+Umgebungsvariablen setzten in C/C++ Build -> Environment nur fürs Projekt, kann auch über Windows -> Properties -> C/C++ Build -> Environment für alle Projekte gesetzt werden
+MINGW_ROOT C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\
+PATH C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x64;$(PATH)
+
+Source Location angeben in C/C++ General -> Path and Symbols -> Source Location: ABS_MOM_SECEDA/ABS_MATHLIFE
+
+C++ Include File angeben in C/C++ General -> Path and Symbols -> Includes
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\include
+
+Hilfe in Eclipse über Help -> Help Contents -> Cmake4Eclipse
+
+set PATH=C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\SDK\ScopeCppSDK\SDK\bin;%PATH%
+set LIB=C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\SDK\ScopeCppSDK\SDK\lib;C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\lib\x64\
+
+
+Set the Environment:
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\Tools\VsDevCmd.bat
+
+Environment in Eclipse:
+PATH=C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x64;C:\Program Files\cmake\cmake-3.17.2-win64-x64\bin;$(PATH)
+LIB=C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\SDK\ScopeCppSDK\SDK\lib;C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\14.16.27023\lib\x64
+MINGW_ROOT=C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\VC\Tools\MSVC\
+
+INCLUDE=
+C:\PROGRA~2\MICROS~2\2017\Professional\VC\Tools\MSVC\14.16.27023\ATLMFC\include;
+C:\PROGRA~2\MICROS~2\2017\Professional\VC\Tools\MSVC\14.16.27023\include;
+C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um;
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt;
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared;
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um;
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt;
+C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt;
+C:\PROGRA~1\IBM\SQLLIB\INCLUDE;
+C:\PROGRA~1\IBM\SQLLIB\LIB
+
+JAVA_HOME=C:\Program Files\Amazon Corretto\jdk16.0.2_7
+
+Umgebung aus VsDevCmd.bat:
+
+VS150COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\Tools\
+VSCMD_ARG_app_plat=Desktop
+VSCMD_ARG_HOST_ARCH=x86
+VSCMD_ARG_TGT_ARCH=x86
+VSINSTALLDIR=C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\
+Path=C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\Tools\
+L
+
+
+
+>cmake -G "Visual Studio 15 2017 Win64" ..\ABS_MATHLIFE

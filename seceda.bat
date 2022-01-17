@@ -15,11 +15,15 @@ REM ==== JAVA ====
 REM set PATH=C:\Program Files\Amazon Corretto\jdk16.0.2_7\bin;
 REM set PATH=C:\Program Files (x86)\Common Files\Oracle\Java\javapath;
 
-set PATH=C:\Program Files\Java\jdk1.8.0_281\bin;C:\Program Files\Java\jdk1.8.0_281\jre\bin;C:\Program Files\Java\jdk1.8.0_281\jre\bin\server;%PATH%
+
+set PATH=c:\Progra~2\Micros~2\2017\Professional\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x64;%PATH%
+
+set PATH=c:\Progra~1\Java\jdk1.8.0_281\bin;C:\Program Files\Java\jdk1.8.0_281\jre\bin;C:\Program Files\Java\jdk1.8.0_281\jre\bin\server;%PATH%
 set JAVA_HOME=C:\Progra~1\Java\jre1.8.0_291
 
 REM == change dir ==
 
 cd c:\dev
+cd c:\Daten\git\seceda\abs-rss-cpl\build\Debug\CMakeFiles\CMakeTmp
 
 cmd 
