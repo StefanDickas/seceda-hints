@@ -1,0 +1,3 @@
+curl -v -X GET   -H "Content-type: application/json"   -H "Accept: application/json" -d  @/c/Daten/Syncier/seceda/bugs/SEC-1904/dietmar/request.json http://localhost:18100/rss/compute/contract?type=math_life_seceda
+
+ curl -O https://cpl-dtsyn03.internal.dev01.dev.abs.syc.syncier.cloud/rss/logs/rss.log
