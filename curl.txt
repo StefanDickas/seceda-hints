@@ -1,3 +1,4 @@
-curl -v -X GET   -H "Content-type: application/json"   -H "Accept: application/json" -d  @/c/Daten/Syncier/seceda/bugs/SEC-1904/dietmar/request.json http://localhost:18100/rss/compute/contract?type=math_life_seceda
-
+curl -v -X GET -L -H "Content-type: application/json"   -H "Accept: application/json" -d  @/c/Daten/Syncier/seceda/bugs/SEC-1904/dietmar/request.json -P 18100 http://localhost/rss/compute/contract?type=math_life_seceda
+curl -v -X GET -L -H "Content-type: application/json"   -H "Accept: application/json" -d  @/c/Daten/Syncier/seceda/bugs/SEC-1904/dietmar/request.json  cpl-dtsyn04.internal.dev01.dev.abs.syc.syncier.cloud/rss/compute/contract?type=math_life_seceda
+ 
  curl -O https://cpl-dtsyn03.internal.dev01.dev.abs.syc.syncier.cloud/rss/logs/rss.log
