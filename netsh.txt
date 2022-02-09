@@ -1,0 +1,20 @@
+netsh http show urlacl
+
+netsh http add urlacl url=http://*:18101/rss user=laptop-hldbnvnj\stefan listen=yes delegate=yes
+netsh http add urlacl url=http://*:18101/rss user=laptop-hldbnvnj\stefan listen=yes delegate=yes
+netsh http delete urlacl url=http://*:18101/rss
+
+netsh http add urlacl url=http://*:18100/rss user=laptop-hldbnvnj\stefan delegate=yes
+netsh http add urlacl url=http://*:18101/rss user=laptop-hldbnvnj\stefan delegate=yes
+
+netsh http add urlacl url=http://127.0.0.1:18101/rss user=syncier\stefan.dickas delegate=yes
+
+
+see also windows defender firewall, als app aus der Startliste ansteuerbar
+
+
+User Managment
+--------------
+
+compmgmt.msc
+add to network administrators

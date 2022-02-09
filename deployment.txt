@@ -1,0 +1,14 @@
+Deployment dev03
+----------------
+
+/c/Daten/git/github/syncier/apps-abs-syc-dev/cluster/namespaces/dtsyn03/Charts.yaml
+
+Deployments dev01 dev04
+-----------------------
+https://dev.azure.com/syncier/abs-on-azure/_build?definitionId=1672&_a=summary
+https://dev.azure.com/syncier/abs-on-azure/_build?definitionScope=%5Cabs-helm-configuration%5Ccpl
+
+Build
+-----
+https://dev.azure.com/syncier/abs-on-azure/_build?definitionScope=%5CCPL
+

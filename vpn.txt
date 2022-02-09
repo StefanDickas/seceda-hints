@@ -1,0 +1,4 @@
+net use G: /delete
+net use G: \\stsycabsproddew1vdi.file.core.windows.net\sts-syc-abs-prod-dew1-vdi\Actuarial
+
+10.50.176.27
