@@ -4,25 +4,64 @@ cmake -G"Eclipse CDT4 - Unix Makefiles" -D CMAKE_BUILD_TYPE=Debug -DABS_SDK_ROOT
 oder
 cmake -G "Visual Studio 15 2017 Win64" -D CMAKE_BUILD_TYPE=Debug -DABS_SDK_ROOT_PATH=C:/dev/allianz/abs-sdk-debug/ -DABS_SDK_VERSION=21.0.305.35 -DCPP_DEVKIT_ROOT_PATH=c:/dev/allianz/cpp_devkit_debug/ -DCMAKE_INSTALL_PREFIX=c:/dev/allianz/math_life_seceda ../ABS_MATHLIFE/
 
-anschließendimportieren als generelles existierendes project
+anschließend importieren als generelles existierendes project
 
-oder 
 
+---------------------------------
 2)  mit dem plugin cmake4eclipse:
+---------------------------------
 
-Das Projekt anlegen mit File->New -> Project .. nicht mit File -> New -> C/C++ Project 
 
-CMAKE Defines in den Properties des Projektes in C/C++ Build-> Cmake4eclipse eintragen: 
-ABS_SDK_ROOT_PATH        C:/dev/allianz/abs-sdk-debug/
-ABS_SDK_VERSION          21.0.305.35
-CPP_DEVKIT_ROOT_PATH     c:/dev/allianz/cpp_devkit_debug/
-CMAKE_MAKE_PROGRAM       nmake
-MSVC_RUNTIME_LIBRARY STRING MultiThreadedDebugDLL
-MSVC BOOL true
-CMAKE_CL_64              true
-CMAKE_HOST_WIN32         true
-MSVC_VERSION   1930-1939 = VS 17.0 (v143 toolset)
-WIN32 true
+Environment mit setzen
+%comspec% /k "C:\Progra~2\Micros~2\2017\Professional\VC\Auxiliary\Build\vcvars64.bat
+
+Strawberry C++ aus dem Pfad entfernen
+
+Dokumentation: Cmake4eclipse User Guide in Help von Eclipse
+
+Das Projekt anlegen mit File->New -> Project .. dann C++ Project und CMAKE/Empty Project,
+nicht mit File -> New -> C/C++ Project 
+
+in den advanced settings->Sources das Directory angeben, in dem das
+ 
+CMAKE Defines in den Properties des Projektes in 
+C/C++ Build-> Cmake4eclipse -> Symbols 
+eintragen: 
+
+    ABS_SDK_ROOT_PATH        C:/dev/allianz/abs-sdk-debug/
+    ABS_SDK_VERSION          21.0.305.35
+    CPP_DEVKIT_ROOT_PATH     c:/dev/allianz/cpp_devkit_debug/
+    CMAKE_C_COMPILER         cl
+    CMAKE_CXX_COMPILER       cl
+    CMAKE_CL_64              true
+    CMAKE_MAKE_PROGRAM       nmake
+
+to get the compiler version: cl /Bv
+
+Die nicht macht das Environment von Visual Studio:
+--------------------------------------------------
+
+    CMAKE_CXX_COMPILER_ID MSVC
+    CMAKE_CXX_COMPILER_VERSION 19.16.27045.0
+    MSVC_RUNTIME_LIBRARY STRING MultiThreadedDebugDLL
+    MSVC BOOL true
+    CMAKE_CL_64              true
+    CMAKE_HOST_WIN32         true
+    MSVC_VERSION   1930-1939 = VS 17.0 (v143 toolset)
+    WIN32 true
+
+
+Nmake Makefiles auswählen in
+C/C++ Build-> Cmake4eclipse -> Host OS overrides -> Cmake Executables -> Buildscript Generator 
+
+TCD_sharen als Link-Folder unter src hängen
+
+-------------------------------------------------------
+3) Das ganze mit nmake und Generators from Command Line
+-------------------------------------------------------
+
+
+
 
 
 CMAKE_C_COMPILER = C:/Strawberry/c/bin/gcc
