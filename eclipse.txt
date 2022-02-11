@@ -55,6 +55,7 @@ Nmake Makefiles auswählen in
 C/C++ Build-> Cmake4eclipse -> Host OS overrides -> Cmake Executables -> Buildscript Generator 
 
 TCD_sharen als Link-Folder unter src hängen
+tcd_data* und tcd_rbs* rausfiltern
 
 -------------------------------------------------------
 3) Das ganze mit nmake und Generators from Command Line
