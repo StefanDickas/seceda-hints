@@ -1,0 +1,13 @@
+
+// Create private Key
+openssl genrsa -out Stefan.Dickas.pem 1024
+
+// Create public key
+openssl rsa -in Stefan.Dickas.pem -out StefanDickasPublic.pem -outform PEM -pubout
+ 
+// Encrypt
+openssl rsautl -encrypt -pubin -inkey StefanDickasPublic.pem  -in odel.txt -out odel.txt.priv
+
+
+// Entschlüsseln
+openssl rsautl -decrypt -inkey Stefan.Dickas.pem  -in odel.txt.priv -out odel.txt.pub

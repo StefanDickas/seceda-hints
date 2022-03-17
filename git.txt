@@ -1,0 +1,24 @@
+SSH
+---
+
+ssh file generieren
+-------------------
+
+ssh-keygen -t ed25519 -C "stefan.dickas@gmx.de
+
+connection string:  ssh git@github.com/ .....
+
+remote.origin.url=git@github.com:harlekin0911/doobie-vsl.git
+
+
+HTTP:
+-----
+
+generate Token in website->settings->developer
+
+remote.origin.url=https://harlekin0911@github.com/harlekin0911/doobie-tut.git
+
+SSH-FILE
+--------
+
+git config core.sshCommand 'ssh -i /c/users/stefan/.ssh/<filename>'
