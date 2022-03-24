@@ -1,1 +1,16 @@
 https://nexus2.internal.dev01.dev.abs.syc.syncier.cloud/nexus/#welcome
+
+user: actuarytechnicaluser
+passwd: xqANlgAVpcJZHTEfSY9V
+
+upload:
+-------
+
+curl.exe -v -u USER:PASSWORD --upload-file '.\at.allianz.abs.cpp.math.libstdcpp-5.4.0-rhel7.x86_64.rp' https://nexus2.internal.dev01.dev.abs.syc.syncier.cloud/nexus/content/repositories/syncier/syncier/cpl/other_dependencies/de.syncier.abs.cpp.math-22.0.33-alpha.5.zip
+curl.exe -v -u actuarytechnicaluser:xqANlgAVpcJZHTEfSY9V --upload-file 'file' https://nexus2.internal.dev01.dev.abs.syc.syncier.cloud/nexus/content/repositories/<pfad>/<file>
+
+delete:
+-------
+
+curl.exe -X DELETE -u USER:PASSWORD https://nexus2.internal.dev01.dev.abs.syc.syncier.cloud/nexus/content/repositories/syncier/syncier/cpl/deliveries/at/allianz/abs/cpp/math/at.allianz.abs.cpp.math/21.0.305.35/at.allianz.abs.cpp.math-21.0.305.35.zip
+curl.exe -X DELETE -u actuarytechnicaluser:xqANlgAVpcJZHTEfSY9V https://nexus2.internal.dev01.dev.abs.syc.syncier.cloud/nexus/content/repositories/<pfad>/<file>
