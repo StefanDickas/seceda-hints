@@ -1,0 +1,8 @@
+# To run a shell in a container:
+docker run -p 18100:18100 -it --rm --entrypoint sh cplimage:2
+
+# Run a Image and name the container
+docker run -p 18100:18100 --name odel3 -t cplimage:2
+
+# Build a Dockerimage from Dockerfile and tag the image
+docker build -f CPL.Dockerfile -t cplimage:2 .
